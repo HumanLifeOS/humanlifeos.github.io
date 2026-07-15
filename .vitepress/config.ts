@@ -113,7 +113,7 @@ export default defineConfig({
 
     // 社交链接（显示在导航栏）
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/HumanLifeOS/humanlifeos.github.io' }
     ],
 
     // 搜索配置
