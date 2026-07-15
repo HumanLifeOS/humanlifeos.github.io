@@ -20,7 +20,7 @@ hero:
       text: 正念2.0
       link: https://github.com/vuejs/vitepress
   image:
-      src: /hero.png
+      src: /vitepress-logo-large.svg
       alt: HumanLifeOS
 
 features:
