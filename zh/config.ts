@@ -13,13 +13,13 @@ export default defineAdditionalConfig({
     search: { options: searchOptions() },
 
     sidebar: {
-      '/zh/vision/': { items: sidebarVision() },
-      '/zh/methodology/': { items: sidebarMethodology() },
-      '/zh/knowledge/': { items: sidebarKnowledge() },
-      '/zh/training/': { items: sidebarTraining() },
-      '/zh/research/': { items: sidebarResearch() },
-      '/zh/blog/': { items: sidebarBlog() },
-      '/zh/about/': { items: sidebarAbout() }
+      '/zh/vision/': { items: sidebarMain() },
+      '/zh/methodology/': { items: sidebarMain() },
+      '/zh/knowledge/': { items: sidebarMain() },
+      '/zh/training/': { items: sidebarMain() },
+      '/zh/research/': { items: sidebarMain() },
+      '/zh/blog/': { items: sidebarMain() },
+      '/zh/about/': { items: sidebarMain() }
     },
 
     editLink: {
@@ -66,29 +66,19 @@ export default defineAdditionalConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: '愿景',
-      link: '/zh/vision/',
-      activeMatch: '/zh/vision/'
+      text: '首页',
+      link: '/zh/',
+      activeMatch: '/zh/$'
     },
     {
-      text: '方法论',
-      link: '/zh/methodology/',
-      activeMatch: '/zh/methodology/'
-    },
-    {
-      text: '知识库',
-      link: '/zh/knowledge/',
-      activeMatch: '/zh/knowledge/'
-    },
-    {
-      text: '训练营',
-      link: '/zh/training/',
-      activeMatch: '/zh/training/'
-    },
-    {
-      text: '科研',
-      link: '/zh/research/',
-      activeMatch: '/zh/research/'
+      text: '白皮书',
+      items: [
+        { text: '愿景', link: '/zh/vision/' },
+        { text: '方法论', link: '/zh/methodology/' },
+        { text: '知识库', link: '/zh/knowledge/' },
+        { text: '训练营', link: '/zh/training/' },
+        { text: '科研', link: '/zh/research/' }
+      ]
     },
     {
       text: '博客',
@@ -323,30 +313,14 @@ function searchOptions(): Partial<DefaultTheme.AlgoliaSearchOptions> {
   }
 }
 
-function sidebarVision(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarMethodology(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarKnowledge(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarTraining(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarResearch(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarBlog(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarAbout(): DefaultTheme.SidebarItem[] {
-  return []
+function sidebarMain(): DefaultTheme.SidebarItem[] {
+  return [
+    { text: '愿景', link: '/zh/vision/' },
+    { text: '方法论', link: '/zh/methodology/' },
+    { text: '知识库', link: '/zh/knowledge/' },
+    { text: '训练营', link: '/zh/training/' },
+    { text: '科研', link: '/zh/research/' },
+    { text: '博客', link: '/zh/blog/' },
+    { text: '关于', link: '/zh/about/' }
+  ]
 }

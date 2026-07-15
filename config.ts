@@ -11,13 +11,13 @@ export default defineAdditionalConfig({
     nav: nav(),
 
     sidebar: {
-      '/vision/': { items: sidebarVision() },
-      '/methodology/': { items: sidebarMethodology() },
-      '/knowledge/': { items: sidebarKnowledge() },
-      '/training/': { items: sidebarTraining() },
-      '/research/': { items: sidebarResearch() },
-      '/blog/': { items: sidebarBlog() },
-      '/about/': { items: sidebarAbout() }
+      '/vision/': { items: sidebarMain() },
+      '/methodology/': { items: sidebarMain() },
+      '/knowledge/': { items: sidebarMain() },
+      '/training/': { items: sidebarMain() },
+      '/research/': { items: sidebarMain() },
+      '/blog/': { items: sidebarMain() },
+      '/about/': { items: sidebarMain() }
     },
 
     editLink: {
@@ -39,29 +39,19 @@ export default defineAdditionalConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: 'Vision',
-      link: '/vision/',
-      activeMatch: '/vision/'
+      text: 'Home',
+      link: '/',
+      activeMatch: '/$'
     },
     {
-      text: 'Methodology',
-      link: '/methodology/',
-      activeMatch: '/methodology/'
-    },
-    {
-      text: 'Knowledge',
-      link: '/knowledge/',
-      activeMatch: '/knowledge/'
-    },
-    {
-      text: 'Training',
-      link: '/training/',
-      activeMatch: '/training/'
-    },
-    {
-      text: 'Research',
-      link: '/research/',
-      activeMatch: '/research/'
+      text: 'White Paper',
+      items: [
+        { text: 'Vision', link: '/vision/' },
+        { text: 'Methodology', link: '/methodology/' },
+        { text: 'Knowledge', link: '/knowledge/' },
+        { text: 'Training', link: '/training/' },
+        { text: 'Research', link: '/research/' }
+      ]
     },
     {
       text: 'Blog',
@@ -158,30 +148,14 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
   ]
 }
 
-function sidebarVision(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarMethodology(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarKnowledge(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarTraining(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarResearch(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarBlog(): DefaultTheme.SidebarItem[] {
-  return []
-}
-
-function sidebarAbout(): DefaultTheme.SidebarItem[] {
-  return []
+function sidebarMain(): DefaultTheme.SidebarItem[] {
+  return [
+    { text: 'Vision', link: '/vision/' },
+    { text: 'Methodology', link: '/methodology/' },
+    { text: 'Knowledge', link: '/knowledge/' },
+    { text: 'Training', link: '/training/' },
+    { text: 'Research', link: '/research/' },
+    { text: 'Blog', link: '/blog/' },
+    { text: 'About', link: '/about/' }
+  ]
 }
