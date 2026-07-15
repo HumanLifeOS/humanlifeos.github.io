@@ -5,20 +5,23 @@ layout: home
 hero:
   name: HumanLifeOS
   text: 人类生命操作系统
-  tagline: 《生命使用手册》— 从本能OS到智能OS
+  tagline: 从本能OS到智能OS
   actions:
     - theme: brand
-      text: 从正觉训练开始！
+      text: 生命使用手册
       link: ./guide/what-is-vitepress
     - theme: alt
-      text: 正念2.0
-      link: ./guide/getting-started
+      text: 正觉训练
+      link: ./guide/getting-started      
     - theme: alt
       text: 禅法现代化
+      link: ./guide/getting-started
+    - theme: alt
+      text: 正念2.0
       link: https://github.com/vuejs/vitepress
   image:
-      src: /vitepress-logo-large.svg
-      alt: VitePress
+      src: /hero.png
+      alt: HumanLifeOS
 
 features:
   - icon: 📝
