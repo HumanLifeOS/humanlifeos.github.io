@@ -139,8 +139,8 @@ export default defineConfig({
 
   // 多语言配置
   locales: {
-    root: { label: '🇺🇸 English', lang: 'en-US', dir: 'ltr' },
-    zh: { label: '🇨🇳 简体中文', lang: 'zh-Hans', dir: 'ltr' }
+    root: { label: 'English', lang: 'en-US', dir: 'ltr' },
+    zh: { label: '简体中文', lang: 'zh-Hans', dir: 'ltr' }
   },
 
   // Vite 构建配置
