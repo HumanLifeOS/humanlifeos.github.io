@@ -1,13 +1,16 @@
 ---
-description: VitePress 是一个由 Vite 和 Vue 驱动的静态站点生成器，可以用 Markdown 快速创建精美的文档站点。
+description: HumanLifeOS - 人类生命操作系统
 layout: home
 
 hero:
   name: HumanLifeOS
   text: 人类生命操作系统
-  tagline: 从本能OS到智能OS
+  tagline: 
   actions:
     - theme: brand
+      text: 从本能OS到智能OS
+      link: ./guide/what-is-vitepress  
+    - theme: alt
       text: 生命使用手册
       link: ./guide/what-is-vitepress
     - theme: alt
@@ -40,15 +43,8 @@ features:
     title: 速度真的很快！
     details: 采用静态 HTML 实现快速的页面初次加载，使用客户端路由实现快速的页面切换导航。
 
-  - icon: 🚀
+  - icon: 💝
     title: 速度真的很快！
     details: 采用静态 HTML 实现快速的页面初次加载，使用客户端路由实现快速的页面切换导航。 
-    
-  - icon: 🚀
-    title: 速度真的很快！
-    details: 采用静态 HTML 实现快速的页面初次加载，使用客户端路由实现快速的页面切换导航。
-    
-  - icon: 🚀
-    title: 速度真的很快！
-    details: 采用静态 HTML 实现快速的页面初次加载，使用客户端路由实现快速的页面切换导航。     
+
 ---
