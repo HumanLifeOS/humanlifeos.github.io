@@ -13,7 +13,7 @@ import llmstxt from 'vitepress-plugin-llms'
 // 判断是否为生产环境（通过环境变量 NETLIFY 判断）
 const prod = !!process.env.NETLIFY
 // 站点的基础 URL
-const siteUrl = 'https://HumanLifeOS.com'
+const siteUrl = 'https://humanlifeos.com'
 
 // Open Graph 图片的完整 URL
 const ogImage = new URL('/vitepress-og.jpg', siteUrl).href
