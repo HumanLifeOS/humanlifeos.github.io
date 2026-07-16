@@ -29,7 +29,7 @@ export default defineAdditionalConfig({
 
     footer: {
       message: '基于 MIT 许可发布',
-      copyright: `版权所有 © ${new Date().getFullYear()} 『天人合一科学实验室』 保留所有权利`
+      copyright: `版权所有 © ${new Date().getFullYear()} 『天人合一科学实验室』`
     },
 
     docFooter: {

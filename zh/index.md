@@ -5,7 +5,7 @@ title: 人类生命操作系统
 hero:
   name: HumanLifeOS
   text: 人类生命操作系统
-  tagline: 生命使用手册 - 从本能OS到智能OS
+  tagline: 生命使用手册：从本能OS到智能OS
   actions:
     - theme: brand
       text: 从正觉训练开始！
