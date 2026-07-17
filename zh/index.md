@@ -8,7 +8,7 @@ hero:
   tagline: 成为新人类 » 从本能OS到智能OS
   actions:
     - theme: brand
-      text: 🔑 从正觉训练开始！
+      text: 🔑 从“正觉训练”开始！
       link: ./guide/what-is-vitepress  
     - theme: alt
       text: 正念2.0
