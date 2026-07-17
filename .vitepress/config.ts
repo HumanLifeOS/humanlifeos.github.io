@@ -152,7 +152,7 @@ export default defineConfig({
           // 自定义 vitepress 图标
           vitepress: localIconLoader(
             import.meta.url,
-            '../public/vitepress-logo-mini.svg'
+            '../public/icon.png'
           ),
           // 使用 Iconify 的 firebase 图标
           firebase: 'logos:firebase'
