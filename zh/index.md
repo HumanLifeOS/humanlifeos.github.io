@@ -11,13 +11,10 @@ hero:
       text: 🔑 从正觉训练开始！
       link: ./guide/what-is-vitepress  
     - theme: alt
-      text: 生命使用手册
-      link: ./guide/what-is-vitepress      
-    - theme: alt
-      text: 禅法工程化
+      text: 正念2.0
       link: ./guide/what-is-vitepress
     - theme: alt
-      text: 正念2.0
+      text: 智能OS
       link: https://github.com/vuejs/vitepress
   image:
       src: /vitepress-logo-large.svg
@@ -25,7 +22,7 @@ hero:
 
 features:
   - icon: 📝
-    title: 禅法工程化
+    title: 古老智慧的工程化
     details: 古老智慧的工程化，只需 Markdown 即可轻松创建美观的文档站点。
 
   - icon: 🎁
