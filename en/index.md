@@ -8,13 +8,13 @@ hero:
   tagline: Evolve into New Humanity » From Instinct OS to Intelligent OS
   actions:
     - theme: brand
-      text: Ascend Life through Right Awakening!
+      text: 🔑 Ascend Life through Right Awakening!
       link: ./guide/what-is-vitepress
     - theme: alt
       text: Mindfulness 2.0
       link: ./guide/getting-started
     - theme: alt
-      text: Human Life Intelligence Agent OS
+      text: Life Intelligence Agent OS
       link: https://github.com/vuejs/vitepress
   image:
     src: /HumanLifeOS-hero.png
