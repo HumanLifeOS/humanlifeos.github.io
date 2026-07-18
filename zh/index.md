@@ -17,7 +17,7 @@ hero:
       text: 智能OS
       link: https://github.com/vuejs/vitepress
   image:
-      src: /HumanLifeOS-logo.png
+      src: /HumanLifeOS-hero.png
       alt: HumanLifeOS
 
 features:
