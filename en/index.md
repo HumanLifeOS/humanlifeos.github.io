@@ -4,17 +4,17 @@ layout: home
 
 hero:
   name: HumanLifeOS
-  text: Vite & Vue Powered Static Site Generator
-  tagline: Markdown to beautiful docs in minutes
+  text: The Human Life Operating System
+  tagline: Evolve into New Humanity » From Instinct OS to Intelligent OS
   actions:
     - theme: brand
-      text: What is VitePress?
+      text: Ascend Life through Right Awakening!
       link: ./guide/what-is-vitepress
     - theme: alt
-      text: Quickstart
+      text: Mindfulness 2.0
       link: ./guide/getting-started
     - theme: alt
-      text: GitHub
+      text: Human Life Intelligence Agent OS
       link: https://github.com/vuejs/vitepress
   image:
     src: /HumanLifeOS-logo.png
