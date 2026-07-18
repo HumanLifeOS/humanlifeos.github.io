@@ -3,7 +3,7 @@ description: VitePress is a Vite & Vue powered static site generator that lets y
 layout: home
 
 hero:
-  name: VitePress
+  name: HumanLifeOS
   text: Vite & Vue Powered Static Site Generator
   tagline: Markdown to beautiful docs in minutes
   actions:
@@ -17,8 +17,8 @@ hero:
       text: GitHub
       link: https://github.com/vuejs/vitepress
   image:
-    src: /vitepress-logo-large.svg
-    alt: VitePress
+    src: /HumanLifeOS-logo.png
+    alt: HumanLifeOS
 
 features:
   - icon: 📝
