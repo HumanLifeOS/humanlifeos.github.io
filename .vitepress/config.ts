@@ -101,9 +101,9 @@ export default defineConfig({
   // HTML head 配置（添加自定义 meta 标签、链接等）
   head: [
     // SVG 格式的站点图标
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/vitepress-logo-mini.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/icon.png' }],
     // PNG 格式的站点图标（备用）
-    ['link', { rel: 'icon', type: 'image/png', href: '/vitepress-logo-mini.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/icon.png' }],
     // 浏览器主题颜色（地址栏颜色）
     ['meta', { name: 'theme-color', content: '#5f67ee' }]
   ],
