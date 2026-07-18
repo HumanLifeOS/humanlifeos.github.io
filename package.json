@@ -6,9 +6,12 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "sync": "node scripts/sync-docs.js"
+    "sync": "node scripts/sync-docs.js",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
     "markdown-it-mathjax3": "^4.3.2",
     "postcss-rtlcss": "^6.0.0",
     "vitepress": "2.0.0-alpha.18",
