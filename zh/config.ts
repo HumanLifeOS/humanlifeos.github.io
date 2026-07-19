@@ -87,7 +87,7 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/zh/blog/'
     },
     {
-      text: '关于',
+      text: '联系',
       link: '/zh/about/',
       activeMatch: '/zh/about/'
     }
@@ -323,6 +323,6 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
     { text: '科研', link: '/zh/research/' },
     { text: '团队', link: '/zh/team/' },
     { text: '博客', link: '/zh/blog/' },
-    { text: '关于', link: '/zh/about/' }
+    { text: '联系', link: '/zh/about/' }
   ]
 }
