@@ -77,7 +77,8 @@ function nav(): DefaultTheme.NavItem[] {
         { text: '方法论', link: '/zh/methodology/' },
         { text: '知识库', link: '/zh/knowledge/' },
         { text: '训练营', link: '/zh/training/' },
-        { text: '科研', link: '/zh/research/' }
+        { text: '科研', link: '/zh/research/' },
+        { text: '团队', link: '/zh/team/' }
       ]
     },
     {
@@ -320,6 +321,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
     { text: '知识库', link: '/zh/knowledge/' },
     { text: '训练营', link: '/zh/training/' },
     { text: '科研', link: '/zh/research/' },
+    { text: '团队', link: '/zh/team/' },
     { text: '博客', link: '/zh/blog/' },
     { text: '关于', link: '/zh/about/' }
   ]

@@ -1,1 +1,1 @@
-HumanLifeOS Whitepaper.
+Whitepaper Website for HumanLifeOS Built with VitePress.
