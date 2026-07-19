@@ -1,1 +1,1 @@
-HumanLifeOS White Paper.
+HumanLifeOS Whitepaper.
