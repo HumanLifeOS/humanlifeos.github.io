@@ -17,7 +17,7 @@ hero:
       text: 正念禅修2.0
       link: https://github.com/vuejs/vitepress
   image:
-      src: /HumanLifeOS-hero.png
+      src: /hero.png
       alt: HumanLifeOS
 
 features:
