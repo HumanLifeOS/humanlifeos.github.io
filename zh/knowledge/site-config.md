@@ -11,7 +11,7 @@ description: VitePress 站点配置选项的完整参考，包括应用级设置
 
 ### 配置解析 {#config-resolution}
 
-配置文件总是从 `<root>/.vitepress/config.[ext]` 解析，其中 `<root>` 是 VitePress [项目根目录](../guide/routing#root-and-source-directory)，`[ext]` 是支持的文件扩展名之一。开箱即用地支持 TypeScript。支持的扩展名包括 `.js`、`.ts`、`.mjs` 和 `.mts`。
+配置文件总是从 `<root>/.vitepress/config.[ext]` 解析，其中 `<root>` 是 VitePress 项目根目录，`[ext]` 是支持的文件扩展名之一。开箱即用地支持 TypeScript。支持的扩展名包括 `.js`、`.ts`、`.mjs` 和 `.mts`。
 
 建议在配置文件中使用 ES 模块语法。配置文件应该默认导出一个对象：
 
@@ -351,7 +351,7 @@ export default {
 - 类型：`boolean`
 - 默认值： `false`
 
-当设置为 `true` 时，VitePress 将从 URL 中删除 `.html` 后缀。另请参阅[生成简洁的 URL](../guide/routing#generating-clean-urls)。
+当设置为 `true` 时，VitePress 将从 URL 中删除 `.html` 后缀。
 
 ::: warning 需要服务器支持
 要启用此功能，可能需要在托管平台上进行额外配置。要使其正常工作，服务器必须能够在**不重定向的情况下**访问 `/foo` 时提供 `/foo.html`。
@@ -361,7 +361,7 @@ export default {
 
 - 类型：`Record<string, string>`
 
-自定义目录 &lt;-&gt; URL 映射。详细信息请参阅[路由：路由重写](../guide/routing#route-rewrites)。
+自定义目录 <-> URL 映射。
 
 ```ts
 export default {
@@ -378,7 +378,7 @@ export default {
 - 类型：`string`
 - 默认值： `.`
 
-相对于项目根目录的 markdown 文件所在的文件夹。另请参阅[根目录和源目录](../guide/routing#root-and-source-directory)。
+相对于项目根目录的 markdown 文件所在的文件夹。
 
 ```ts
 export default {
@@ -404,7 +404,7 @@ export default {
 - 类型：`string`
 - 默认值： `./.vitepress/dist`
 
-项目的构建输出位置，相对于[项目根目录](../guide/routing#root-and-source-directory)。
+项目的构建输出位置，相对于项目根目录。
 
 ```ts
 export default {
@@ -430,7 +430,7 @@ export default {
 - 类型：`string`
 - 默认值： `./.vitepress/cache`
 
-缓存文件的目录，相对于[项目根目录](../guide/routing#root-and-source-directory)。另请参阅：[cacheDir](https://vitejs.dev/config/shared-options.html#cachedir)。
+缓存文件的目录，相对于项目根目录。另请参阅：[cacheDir](https://vitejs.dev/config/shared-options.html#cachedir)。
 
 ```ts
 export default {
@@ -484,7 +484,7 @@ export default {
 - 类型：`boolean`
 - 默认值： `false`
 
-设置为 `true` 时，生产应用程序将在 [MPA 模式](../guide/mpa-mode)下构建。MPA 模式默认提供 零 JavaScript 支持，代价是禁用客户端导航，并且需要明确选择加入才能进行交互。
+设置为 `true` 时，生产应用程序将在 MPA 模式下构建。MPA 模式默认提供零 JavaScript 支持，代价是禁用客户端导航，并且需要明确选择加入才能进行交互。
 
 ## 主题 {#theming}
 

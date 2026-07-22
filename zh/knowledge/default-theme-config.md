@@ -376,7 +376,7 @@ export interface CarbonAdsOptions {
 
 - 类型：`DocFooter`
 
-可用于自定义出现在上一页和下一页链接上方的文本。如果不是用英语编写文档，这很有帮助。也可用于全局禁用上一页/下一页链接。如果想有选择地启用/禁用上一个/下一个链接，可以使用 [frontmatter](./default-theme-prev-next-links)。
+可用于自定义出现在上一页和下一页链接上方的文本。如果不是用英语编写文档，这很有帮助。也可用于全局禁用上一页/下一页链接。如果想有选择地启用/禁用上一个/下一个链接，可以使用 frontmatter。
 
 ```ts
 export default {
@@ -436,7 +436,7 @@ export interface DocFooter {
 - 类型：`string`
 - 默认值：`Change language`
 
-用于自定义导航栏中语言切换按钮的 aria-label，仅当使用 [i18n](../guide/i18n) 时才使用此选项。
+用于自定义导航栏中语言切换按钮的 aria-label，仅当使用 i18n 时才使用此选项。
 
 ## externalLinkIcon
 

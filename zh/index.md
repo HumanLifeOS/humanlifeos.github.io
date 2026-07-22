@@ -14,7 +14,7 @@ hero:
       text: 生命使用手册
       link: ./guide/what-is-vitepress
     - theme: alt
-      text: 正念禅修2.0
+      text: 正念2.0
       link: https://github.com/vuejs/vitepress
   image:
       src: /hero.png

@@ -168,7 +168,7 @@ export default {
 
 ## 自定义组件
 
-你可以通过使用 `component` 选项在导航栏中包含自定义组件。`component` 键对应的值应为 Vue 组件名，并且必须使用 [Theme.enhanceApp](../guide/custom-theme#theme-interface) 全局注册。
+你可以通过使用 `component` 选项在导航栏中包含自定义组件。`component` 键对应的值应为 Vue 组件名，并且必须使用 `Theme.enhanceApp` 全局注册。
 
 ```js [.vitepress/config.js]
 export default {

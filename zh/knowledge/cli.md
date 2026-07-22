@@ -43,7 +43,7 @@ vitepress build [root]
 
 | 选项                           | 说明                                                                                              |
 | ------------------------------ | ------------------------------------------------------------------------------------------------- |
-| `--mpa` (experimental)         | [MPA 模式](../guide/mpa-mode) 下构建，无需客户端激活 (`boolean`)                        |
+| `--mpa` (experimental)         | MPA 模式下构建，无需客户端激活 (`boolean`)                        |
 | `--base <path>`                | public base URL (默认值: `/`)  (`string`)                                                            |
 | `--target <target>`            | 转译目标 (默认值：`"modules"`) (`string`)                                                        |
 | `--outDir <dir>`               | 输出目录 (默认值：`.vitepress/dist`) (`string`)                                                  |
@@ -68,7 +68,7 @@ vitepress preview [root]
 
 ## `vitepress init`
 
-在当前目录中启动[安装向导](../guide/getting-started#setup-wizard)。
+在当前目录中启动安装向导。
 
 ### 用法
 

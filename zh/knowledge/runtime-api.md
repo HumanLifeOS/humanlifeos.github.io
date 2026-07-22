@@ -121,11 +121,11 @@ interface Router {
 
 - **Type**: `(path: string) => string`
 
-将配置的 [`base`](./site-config#base) 追加到给定的 URL 路径。另请参阅 [Base URL](../guide/asset-handling#base-url)。
+将配置的 [`base`](./site-config#base) 追加到给定的 URL 路径。另请参阅 Base URL。
 
 ## `<Content />` <Badge type="info" text="component" />
 
-`<Content />` 组件显示渲染的 markdown 内容。在[创建自己的主题时](../guide/custom-theme)很有用。
+`<Content />` 组件显示渲染的 markdown 内容。在创建自己的主题时很有用。
 
 ```vue
 <template>
@@ -148,11 +148,11 @@ interface Router {
 </ClientOnly>
 ```
 
-- 相关文档：[SSR 兼容性](../guide/ssr-compat)
+- 相关文档：SSR 兼容性
 
 ## `$frontmatter` <Badge type="info" text="template global" />
 
-在 Vue 表达式中直接访问当前页面的 [frontmatter](../guide/frontmatter) 数据。
+在 Vue 表达式中直接访问当前页面的 frontmatter 数据。
 
 ```md
 ---
@@ -164,7 +164,7 @@ title: Hello
 
 ## `$params` <Badge type="info" text="template global" />
 
-在 Vue 表达式中直接访问当前页面的[动态路由参数](../guide/routing#dynamic-routes)。
+在 Vue 表达式中直接访问当前页面的动态路由参数。
 
 ```md
 - package name: {{ $params.pkg }}
