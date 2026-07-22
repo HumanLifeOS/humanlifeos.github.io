@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 🔑 从“正觉训练”开始升级！
-      link: ./guide/what-is-vitepress  
+      link: /zh/training
     - theme: alt
       text: 生命使用手册
       link: ./guide/what-is-vitepress
