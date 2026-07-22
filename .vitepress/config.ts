@@ -33,13 +33,16 @@ export default defineConfig({
   base: '/',
 
   // URL 重写规则
-  // 将 en/ 开头的路径重写为根路径（使英文为默认语言）
+  // 将 zh/ 开头的路径重写为根路径（使中文为默认语言）
   rewrites: {
-    'en/:rest*': ':rest*'
+    'zh/:rest*': ':rest*'
   },
 
   // 是否显示最后更新时间（基于 Git 提交时间）
   lastUpdated: true,
+
+  // 忽略死链检查（知识库文档中包含指向 VitePress 官方文档的链接）
+  ignoreDeadLinks: true,
   // 是否使用干净的 URL（不带 .html 后缀）
   cleanUrls: true,
   // 是否将元数据提取到单独的 chunk 中（优化缓存）
