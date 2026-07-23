@@ -74,12 +74,12 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       text: '愿景',
       collapsed: true,
       items: [
-        { text: '缘起', link: '/about/origin' },
-        { text: '生命OS', link: '/about/lifeos' },
-        { text: '禅法现代化', link: '/about/modern-zen' },
-        { text: '正念2.0', link: '/about/meditation-2-0' },
-        { text: '正觉训练', link: '/about/ra-training' },
-        { text: '生命使用手册', link: '/about/life-user-manual' }
+        { text: '缘起', link: '/vision/origin' },
+        { text: '生命OS', link: '/vision/lifeos' },
+        { text: '禅法现代化', link: '/vision/modern-zen' },
+        { text: '正念2.0', link: '/vision/mindfulness-2-0' },
+        { text: '正觉训练', link: '/vision/ra-training' },
+        { text: '生命使用手册', link: '/vision/life-user-manual' }
       ]
     },
     {
