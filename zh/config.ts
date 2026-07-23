@@ -103,7 +103,8 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         { text: '站点配置', link: '/knowledge/site-config' },
         {
           text: '字典',
-          base: 'zh/knowledge/default-theme-',
+          collapsed: true,
+          base: '/zh/knowledge/default-theme-',
           items: [
             { text: '概览', link: 'config' },
             { text: '导航栏', link: 'nav' },

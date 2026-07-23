@@ -8,7 +8,7 @@ hero:
   tagline: —— 从本能OS到智能OS
   actions:
     - theme: brand
-      text: 🔑 升级你的OS → 从“正觉训练”开始！
+      text: 🔑 升级你的OS → 从“正觉”开始！
       link: /zh/vision/ra-training
 
   image:
