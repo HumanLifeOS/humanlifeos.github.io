@@ -61,7 +61,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '愿景', link: '/zh/vision/origin', activeMatch: '/zh/vision/origin' },
-    { text: '方法论', link: '/zh/methodology/scientific-approach', activeMatch: '/zh/methodology' },
+    { text: '方法论', link: '/zh/methodology/scientific-methodology', activeMatch: '/zh/scientific-methodology' },
     { text: '知识库', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
     { text: '科研', link: '/zh/research/goals', activeMatch: '/zh/research/goals' },
     { text: '关于', link: '/zh/about/creator', activeMatch: '/zh/about/creator' }
@@ -86,10 +86,10 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       text: '方法论',
       collapsed: true,
       items: [
-        { text: '科学化', link: '/methodology/scientific-approach' },
-        { text: '生活化', link: '/methodology/life-integration' },
-        { text: '工程化', link: '/methodology/engineering-implementation' },
-        { text: '系统化', link: '/methodology/systematic-framework' }
+        { text: '科学方法论', link: '/methodology/scientific-methodology' },
+        { text: '系统化与工程化', link: '/methodology/systematization-engineering' },
+        { text: '生活化训练', link: '/methodology/lifestyle-training' },
+        { text: '科研方向', link: '/methodology/scientific-research' }
       ]
     },
     {
@@ -103,7 +103,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         { text: '站点配置', link: '/knowledge/site-config' },
         {
           text: '字典',
-          collapsed: true,
+          collapsed: false,
           base: '/zh/knowledge/default-theme-',
           items: [
             { text: '概览', link: 'config' },
