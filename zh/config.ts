@@ -60,24 +60,26 @@ export default defineAdditionalConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
-    { text: '关于', link: '/zh/about/origin', activeMatch: '/zh/about' },
+    { text: '愿景', link: '/zh/vision/origin', activeMatch: '/zh/vision/origin' },
     { text: '方法论', link: '/zh/methodology/scientific-approach', activeMatch: '/zh/methodology' },
     { text: '知识库', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
-    { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
-    { text: '联系', link: '/zh/contact', activeMatch: '/zh/contact' }
+    { text: '科研', link: '/zh/research/goals', activeMatch: '/zh/research/goals' },
+    { text: '关于', link: '/zh/about/creator', activeMatch: '/zh/about/creator' }
   ]
 }
 
 function sidebarMain(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '关于',
+      text: '愿景',
       collapsed: true,
       items: [
         { text: '缘起', link: '/about/origin' },
-        { text: '愿景', link: '/about/vision' },
-        { text: '创始人', link: '/about/creator' },
-        { text: '团队', link: '/about/team' }
+        { text: '生命OS', link: '/about/lifeos' },
+        { text: '禅法现代化', link: '/about/modern-zen' },
+        { text: '正念2.0', link: '/about/meditation-2-0' },
+        { text: '正觉训练', link: '/about/ra-training' },
+        { text: '生命使用手册', link: '/about/life-user-manual' }
       ]
     },
     {
@@ -100,7 +102,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         { text: 'CLI', link: '/knowledge/cli' },
         { text: '站点配置', link: '/knowledge/site-config' },
         {
-          text: '默认主题',
+          text: '字典',
           base: 'zh/knowledge/default-theme-',
           items: [
             { text: '概览', link: 'config' },
@@ -120,10 +122,34 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         }
       ]
     },
-    { text: '科研', link: '/research' },
-    { text: '联系', link: '/contact' }    
+    { text: '科研', 
+      collapsed: true,
+      items: [
+        { text: '目标', link: '/research/goals' },
+        { text: '项目', link: '/research/projects' },
+      ]
+    },
+
+    {
+      text: '关于',
+      collapsed: true,
+      items: [
+        { text: '创始人', link: '/about/creator' },
+        { text: '团队', link: '/about/team' },
+        { text: '价值观', link: '/about/values' }
+      ]
+    },
+    
+    { text: '训练营', link: '/vision/ra-training' },
+
+    { text: '博客', link: '/about/blog' },
+
+    { text: '联系', link: '/about/contact' }
+
+
   ]
 }
+
 
 function searchOptions(): Partial<DefaultTheme.AlgoliaSearchOptions> {
   return {

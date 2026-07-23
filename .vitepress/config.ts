@@ -1,3 +1,4 @@
+import { fileURLToPath, URL } from 'node:url'
 import {
   defineConfig,
   resolveSiteDataByRoute,
@@ -131,10 +132,8 @@ export default defineConfig({
           sidePanel: true
         }
       }
-    },
-
-    // Carbon Ads 广告配置
-    carbonAds: { code: 'CEBDT27Y', placement: 'vuejsorg' }
+    }
+    
   },
 
   // 多语言配置
@@ -145,6 +144,18 @@ export default defineConfig({
 
   // Vite 构建配置
   vite: {
+    // 内页广告组件
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VPCarbonAds\.vue$/,
+          replacement: fileURLToPath(
+            new URL('./theme/VPAd.vue', import.meta.url)
+          )
+        }
+      ]
+    },
+    
     plugins: [
       // 组图标 Vite 插件（用于自定义图标）
       groupIconVitePlugin({
