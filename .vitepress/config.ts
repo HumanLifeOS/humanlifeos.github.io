@@ -101,10 +101,8 @@ export default defineConfig({
   // prettier-ignore: 告诉 Prettier 不要格式化这段代码
   // HTML head 配置（添加自定义 meta 标签、链接等）
   head: [
-    // SVG 格式的站点图标
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/icon.png' }],
-    // PNG 格式的站点图标（备用）
-    ['link', { rel: 'icon', type: 'image/png', href: '/icon.png' }],
+    // ICO 格式的站点图标
+    ['link', { rel: 'icon', type: 'image/vnd.microsoft.icon', href: '/favicon.ico' }],
     // 浏览器主题颜色（地址栏颜色）
     ['meta', { name: 'theme-color', content: '#5f67ee' }]
   ],
@@ -163,7 +161,7 @@ export default defineConfig({
           // 自定义 vitepress 图标
           vitepress: localIconLoader(
             import.meta.url,
-            '../public/icon.png'
+            '../public/favicon.ico'
           ),
           // 使用 Iconify 的 firebase 图标
           firebase: 'logos:firebase'

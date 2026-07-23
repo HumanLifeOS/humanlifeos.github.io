@@ -5,19 +5,13 @@ layout: home
 hero:
   name: HumanLifeOS
   text: The Human Life Operating System
-  tagline: Evolve into New Humanity » From Instinct OS to Intelligent OS
+  tagline: —— From Instinct OS to Intelligent OS
   actions:
     - theme: brand
       text: 🔑 Right Awakening Training!
       link: ./guide/what-is-vitepress
-    - theme: alt
-      text: Mindfulness 2.0
-      link: ./guide/getting-started
-    - theme: alt
-      text: Intelligence Agent OS
-      link: https://github.com/vuejs/vitepress
   image:
-    src: /HumanLifeOS-hero.png
+    src: /hero.png
     alt: HumanLifeOS
 
 features:
