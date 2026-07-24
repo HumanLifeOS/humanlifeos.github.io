@@ -1,9 +1,29 @@
 <script setup lang="ts">
 import type { DefaultTheme } from 'vitepress/theme'
+import { useData } from 'vitepress'
 
 defineProps<{
   carbonAds?: DefaultTheme.CarbonAdsOptions
 }>()
+
+const { lang } = useData()
+
+const adContent: Record<string, { label: string; title: string; description: string; tag: string }> = {
+  'zh-Hans': {
+    label: '推荐',
+    title: 'HumanLifeOS',
+    description: '生命中最值得、最基本的、最关键的认知与训练 —— 正觉训练',
+    tag: 'HLOS'
+  },
+  'en-US': {
+    label: 'Sponsored',
+    title: 'HumanLifeOS',
+    description: 'Human Life Operating System - Make Life Smarter',
+    tag: 'HLOS'
+  }
+}
+
+const currentAd = adContent[lang.value] || adContent['en-US']
 </script>
 
 <template>
@@ -11,15 +31,15 @@ defineProps<{
     <div class="ad-container">
       <div class="ad-label">
         <span class="ad-icon">★</span>
-        <span>推荐</span>
+        <span>{{ currentAd.label }}</span>
       </div>
       <div class="ad-content">
         <a href="https://humanlifeos.com" target="_blank" rel="noopener noreferrer">
-          <div class="ad-title">HumanLifeOS</div>
-          <div class="ad-description">人类生命操作系统 - 让生命更智慧</div>
+          <div class="ad-title">{{ currentAd.title }}</div>
+          <div class="ad-description">{{ currentAd.description }}</div>
         </a>
       </div>
-      <div class="ad-tag">HLOS</div>
+      <div class="ad-tag">{{ currentAd.tag }}</div>
     </div>
   </div>
 </template>

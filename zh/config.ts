@@ -1,7 +1,7 @@
 import { defineAdditionalConfig, type DefaultTheme } from 'vitepress'
 
 export default defineAdditionalConfig({
-  description: '人类生命操作系统 - Human Life (Intelligence Agent) Operating System - HLOS',
+  description: '人类生命操作系统 - HLOS - Human Life (Intelligence Agent) Operating System',
 
   themeConfig: {
     nav: nav(),
@@ -96,29 +96,29 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       text: '知识库',
       collapsed: true,
       items: [
-        { text: '生命使用手册', link: '/knowledge/life-user-manual' },
-        { text: '生命的意义', link: '/knowledge/frontmatter-config' },
+        { text: '手册概述', link: '/knowledge/life-user-manual' },
+        { text: '生命的结构', link: '/knowledge/frontmatter-config' },
         { text: '生命的机制', link: '/knowledge/runtime-api' },
-        { text: '生命的训练', link: '/knowledge/cli' },
-        { text: '生命的疗愈', link: '/knowledge/site-config' },
+        { text: '生命的疗愈', link: '/knowledge/cli' },
+        { text: '生命的训练', link: '/knowledge/site-config' },
         {
-          text: 'FAQ',
+          text: '字典',
           collapsed: false,
           base: '/zh/knowledge/default-theme-',
           items: [
-            { text: '概览', link: 'config' },
-            { text: '导航栏', link: 'nav' },
-            { text: '侧边栏', link: 'sidebar' },
-            { text: '主页', link: 'home-page' },
-            { text: '页脚', link: 'footer' },
-            { text: '布局', link: 'layout' },
-            { text: '徽章', link: 'badge' },
-            { text: '团队页', link: 'team-page' },
-            { text: '上下页链接', link: 'prev-next-links' },
-            { text: '编辑链接', link: 'edit-link' },
-            { text: '最后更新时间戳', link: 'last-updated' },
-            { text: '搜索', link: 'search' },
-            { text: 'Carbon Ads', link: 'carbon-ads' }
+            { text: '生命体', link: 'config' },
+            { text: '智能', link: 'nav' },
+            { text: '注意力', link: 'sidebar' },
+            { text: '意识', link: 'home-page' },
+            { text: '情感', link: 'footer' },
+            { text: '本能', link: 'layout' },
+            { text: '感知', link: 'badge' },
+            { text: '性格', link: 'team-page' },
+            { text: '正念', link: 'prev-next-links' },
+            { text: '正觉', link: 'edit-link' },
+            { text: '感知锚点', link: 'last-updated' },
+            { text: '环境工程', link: 'search' },
+            { text: '心身镜像', link: 'carbon-ads' }
           ]
         }
       ]
