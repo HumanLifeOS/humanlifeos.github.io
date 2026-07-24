@@ -97,12 +97,12 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       collapsed: true,
       items: [
         { text: '生命使用手册', link: '/knowledge/life-user-manual' },
-        { text: 'frontmatter 配置', link: '/knowledge/frontmatter-config' },
-        { text: '运行时 API', link: '/knowledge/runtime-api' },
-        { text: 'CLI', link: '/knowledge/cli' },
-        { text: '站点配置', link: '/knowledge/site-config' },
+        { text: '生命的意义', link: '/knowledge/frontmatter-config' },
+        { text: '生命的机制', link: '/knowledge/runtime-api' },
+        { text: '生命的训练', link: '/knowledge/cli' },
+        { text: '生命的疗愈', link: '/knowledge/site-config' },
         {
-          text: '字典',
+          text: 'FAQ',
           collapsed: false,
           base: '/zh/knowledge/default-theme-',
           items: [
