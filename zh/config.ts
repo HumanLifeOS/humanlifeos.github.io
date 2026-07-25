@@ -77,9 +77,8 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         { text: '缘起', link: '/vision/origin' },
         { text: '生命OS', link: '/vision/lifeos' },
         { text: '禅法现代化', link: '/vision/modern-zen' },
-        { text: '正念2.0', link: '/vision/mindfulness-2-0' },
-        { text: '正觉训练', link: '/vision/ra-training' },
-        { text: '生命使用手册', link: '/vision/life-user-manual' }
+        { text: '工程化心理学', link: '/vision/ra-training' },
+        { text: '正念2.0', link: '/vision/mindfulness-2-0' }
       ]
     },
     {
@@ -96,14 +95,14 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       text: '知识库',
       collapsed: true,
       items: [
-        { text: '手册概述', link: '/knowledge/life-user-manual' },
+        { text: '概述', link: '/knowledge/life-user-manual' },
         { text: '生命的结构', link: '/knowledge/frontmatter-config' },
         { text: '生命的机制', link: '/knowledge/runtime-api' },
         { text: '生命的疗愈', link: '/knowledge/cli' },
         { text: '生命的训练', link: '/knowledge/site-config' },
         {
           text: '字典',
-          collapsed: false,
+          collapsed: true,
           base: '/zh/knowledge/default-theme-',
           items: [
             { text: '生命体', link: 'config' },
@@ -120,7 +119,27 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
             { text: '环境工程', link: 'search' },
             { text: '心身镜像', link: 'carbon-ads' }
           ]
-        }
+        },
+        {
+          text: '术语',
+          collapsed: true,
+          base: '/zh/knowledge/default-theme-',
+          items: [
+            { text: '生命体', link: 'config' },
+            { text: '智能', link: 'nav' },
+            { text: '注意力', link: 'sidebar' },
+            { text: '意识', link: 'home-page' },
+            { text: '情感', link: 'footer' },
+            { text: '本能', link: 'layout' },
+            { text: '感知', link: 'badge' },
+            { text: '性格', link: 'team-page' },
+            { text: '正念', link: 'prev-next-links' },
+            { text: '正觉', link: 'edit-link' },
+            { text: '感知锚点', link: 'last-updated' },
+            { text: '环境工程', link: 'search' },
+            { text: '心身镜像', link: 'carbon-ads' }
+          ]
+        }        
       ]
     },
     { text: '科研', 
