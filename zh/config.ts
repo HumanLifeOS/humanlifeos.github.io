@@ -76,9 +76,9 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       items: [
         { text: '缘起', link: '/vision/origin' },
         { text: '生命OS', link: '/vision/lifeos' },
+        { text: '正念2.0', link: '/vision/mindfulness-2-0' },        
         { text: '禅法现代化', link: '/vision/modern-zen' },
-        { text: '工程化心理学', link: '/vision/ra-training' },
-        { text: '正念2.0', link: '/vision/mindfulness-2-0' }
+        { text: '工程化心理学', link: '/vision/ra-training' }
       ]
     },
     {
