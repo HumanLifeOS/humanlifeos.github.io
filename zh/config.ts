@@ -60,7 +60,7 @@ export default defineAdditionalConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
-    { text: '愿景', link: '/zh/vision/origin', activeMatch: '/zh/vision/origin' },
+    { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
     { text: '方法论', link: '/zh/methodology/scientific-methodology', activeMatch: '/zh/scientific-methodology' },
     { text: '知识库', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
     { text: '科研', link: '/zh/research/goals', activeMatch: '/zh/research/goals' },
@@ -71,14 +71,15 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarMain(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '愿景',
+      text: '缘起',
       collapsed: true,
+      base: '/zh/origin#',
       items: [
-        { text: '缘起', link: '/vision/origin' },
-        { text: '生命OS', link: '/vision/lifeos' },
-        { text: '正念2.0', link: '/vision/mindfulness-2-0' },        
-        { text: '禅法现代化', link: '/vision/modern-zen' },
-        { text: '工程化心理学', link: '/vision/ra-training' }
+        { text: '生命OS', link: 'lifeos' },
+        { text: '正念2.0', link: 'mindfulness-2-0' },        
+        { text: '禅法现代化', link: 'modern-zen' },
+        { text: '工程化心理学', link: 'engineering-psychology' },
+        { text: '愿景', link: 'vision' }
       ]
     },
     {
@@ -123,21 +124,14 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         {
           text: '术语',
           collapsed: true,
-          base: '/zh/knowledge/default-theme-',
+          base: '/zh/glossary#',
           items: [
-            { text: '生命体', link: 'config' },
-            { text: '智能', link: 'nav' },
-            { text: '注意力', link: 'sidebar' },
-            { text: '意识', link: 'home-page' },
-            { text: '情感', link: 'footer' },
-            { text: '本能', link: 'layout' },
-            { text: '感知', link: 'badge' },
-            { text: '性格', link: 'team-page' },
-            { text: '正念', link: 'prev-next-links' },
-            { text: '正觉', link: 'edit-link' },
-            { text: '感知锚点', link: 'last-updated' },
-            { text: '环境工程', link: 'search' },
-            { text: '心身镜像', link: 'carbon-ads' }
+            { text: 'HumanLifeOS', link: 'humanlifeos' },
+            { text: 'HLOS', link: 'hlos' },
+            { text: 'RA', link: 'right-awakening' },
+            { text: 'RAT-1', link: 'right-awakening-training' },
+            { text: 'RAT-2', link: 'right-awakening-therapy' },
+            { text: 'RAC', link: 'right-awakening-camp' }
           ]
         }        
       ]
