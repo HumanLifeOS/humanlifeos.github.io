@@ -154,7 +154,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       ]
     },
     
-    { text: '训练营', link: '/vision/ra-training' },
+    { text: '训练营', link: '/ra-training' },
 
     { text: '博客', link: '/about/blog' },
 
