@@ -61,10 +61,10 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
-    { text: '方法论', link: '/zh/methodology/scientific-methodology', activeMatch: '/zh/scientific-methodology' },
+    { text: '方法论', link: '/zh/methodology', activeMatch: '/zh/methodology' },
     { text: '知识库', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
-    { text: '科研', link: '/zh/research/goals', activeMatch: '/zh/research/goals' },
-    { text: '关于', link: '/zh/about/creator', activeMatch: '/zh/about/creator' }
+    { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
+    { text: '关于', link: '/zh/about', activeMatch: '/zh/about' }
   ]
 }
 
@@ -85,11 +85,12 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
     {
       text: '方法论',
       collapsed: true,
+      base: '/zh/methodology#',
       items: [
-        { text: '科学方法论', link: '/methodology/scientific-methodology' },
-        { text: '系统化与工程化', link: '/methodology/systematization-engineering' },
-        { text: '生活化训练', link: '/methodology/lifestyle-training' },
-        { text: '科研方向', link: '/methodology/scientific-research' }
+        { text: '科学方法论', link: 'scientific-methodology' },
+        { text: '系统化与工程化', link: 'systemization-engineering' },
+        { text: '生活化训练', link: 'lifestyle-training' },
+        { text: '科研方向', link: 'scientific-research' }
       ]
     },
     {
@@ -138,27 +139,29 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
     },
     { text: '科研', 
       collapsed: true,
+      base: '/zh/research#',
       items: [
-        { text: '目标', link: '/research/goals' },
-        { text: '项目', link: '/research/projects' },
+        { text: '目标', link: '/goals' },
+        { text: '项目', link: '/projects' },
       ]
     },
 
     {
       text: '关于',
       collapsed: true,
+      base: '/zh/about#',
       items: [
-        { text: '创始人', link: '/about/creator' },
-        { text: '团队', link: '/about/team' },
-        { text: '价值观', link: '/about/values' }
+        { text: '创始人', link: 'creator' },
+        { text: '团队', link: 'team' },
+        { text: '价值观', link: 'values' }
       ]
     },
     
     { text: '训练营', link: '/ra-training' },
 
-    { text: '博客', link: '/about/blog' },
+    { text: '博客', link: '/blog/' },
 
-    { text: '联系', link: '/about/contact' }
+    { text: '联系', link: '/contact' }
 
 
   ]
