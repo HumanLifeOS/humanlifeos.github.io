@@ -77,9 +77,8 @@ HumanLifeOS以第一性原理重新审视生命系统：
 
 寻找其中可训练、可改变的关键节点。
 
----
 
-## 2. 系统化与工程化 {#systemization-engineering}
+## 2. 系统工程化 {#systemization-engineering}
 
 ### 从零散方法到生命升级系统
 

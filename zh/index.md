@@ -5,10 +5,10 @@ title: 人类生命操作系统
 hero:
   name: HumanLifeOS
   text: 人类生命操作系统
-  tagline: —— 从本能OS到智能OS
+  tagline: 从本能OS → 到智能OS → 到智慧OS
   actions:
     - theme: brand
-      text: 🔑 升级从“正觉训练”开始！
+      text: 🔑 生命OS升级从“正觉训练”开始！
       link: /zh/ra-training
 
   image:

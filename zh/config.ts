@@ -57,17 +57,20 @@ export default defineAdditionalConfig({
   }
 })
 
+// 页头导航栏配置
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
     { text: '方法论', link: '/zh/methodology', activeMatch: '/zh/methodology' },
     { text: '知识库', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
+    { text: '训练营', link: '/zh/ra-training', activeMatch: '/zh/ra-training' },    
     { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
     { text: '关于', link: '/zh/about', activeMatch: '/zh/about' }
   ]
 }
 
+// 侧边导航栏配置
 function sidebarMain(): DefaultTheme.SidebarItem[] {
   return [
     {
