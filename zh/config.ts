@@ -140,6 +140,17 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         }        
       ]
     },
+    {
+      text: '训练营',
+      collapsed: true,
+      base: '/zh/ra-training#',
+      items: [
+        { text: '什么是正觉？', link: 'right-awakening' },
+        { text: '正念训练', link: 'right-awakening-training' },
+        { text: '正念疗法', link: 'right-awakening-therapy' },
+        { text: '正念训练营', link: 'right-awakening-camp' }
+      ]
+    },
     { text: '科研', 
       collapsed: true,
       base: '/zh/research#',
@@ -159,8 +170,6 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         { text: '价值观', link: 'values' }
       ]
     },
-    
-    { text: '训练营', link: '/ra-training' },
 
     { text: '博客', link: '/blog/' },
 
