@@ -41,9 +41,9 @@ const teamMembers = [
   },
   {
     avatar: '/team.svg',
-    name: '大道法师',
-    title: '禅宗法师',
-    desc: '禅宗文化研究专家 · 禅修实践导师',
+    name: '大道禅师',
+    title: '禅修实践导师',
+    desc: '禅宗文化研究与践行专家',
     links: []
   },
   {
