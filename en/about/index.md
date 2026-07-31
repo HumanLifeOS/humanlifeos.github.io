@@ -1,47 +1,120 @@
 ---
 outline: deep
 footer: false
+prev: false
+next: false
 ---
 
-# About Us
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
 
-HumanLifeOS is dedicated to building a new operating system for human life agents.
+const creator = [
+  {
+    avatar: 'https://api.dicebear.com/7.x/shapes/svg?seed=hlos-founder',
+    name: 'HLOS Founder',
+    title: 'Life OS Architect',
+    desc: 'Mindfulness Practitioner · Neuroscience Researcher · Life Intelligence System Architect',
+    links: [
+      { icon: 'github', link: 'https://github.com/HumanLifeOS' }
+    ]
+  }
+]
 
-## Values
+const teamMembers = [
+  {
+    avatar: 'https://api.dicebear.com/7.x/shapes/svg?seed=hlos-ai',
+    name: 'AI Lead',
+    title: 'AI Engineer',
+    desc: 'LLM Architect · Agent System Developer · Knowledge Graph Engineer',
+    links: [
+      { icon: 'github', link: 'https://github.com/HumanLifeOS' }
+    ]
+  },
+  {
+    avatar: 'https://api.dicebear.com/7.x/shapes/svg?seed=hlos-psy',
+    name: 'Psychology Lead',
+    title: 'Clinical Psychologist',
+    desc: 'CBT Expert · Emotion Regulation Researcher · Mindfulness Teacher',
+    links: [
+      { icon: 'github', link: 'https://github.com/HumanLifeOS' }
+    ]
+  },
+  {
+    avatar: 'https://api.dicebear.com/7.x/shapes/svg?seed=hlos-neuro',
+    name: 'Neuroscience Researcher',
+    title: 'Neuroscientist',
+    org: 'University Life Sciences',
+    desc: 'Brain Plasticity Research · Neural Correlates of Consciousness',
+    links: []
+  },
+  {
+    avatar: 'https://api.dicebear.com/7.x/shapes/svg?seed=hlos-cog',
+    name: 'Cognitive Science Researcher',
+    title: 'Cognitive Scientist',
+    org: 'University Psychology Dept',
+    desc: 'Attention Mechanisms · Metacognition Training',
+    links: []
+  },
+  {
+    avatar: 'https://api.dicebear.com/7.x/shapes/svg?seed=hlos-dev',
+    name: 'Full-Stack Developer',
+    title: 'Software Engineer',
+    desc: 'Full-Stack Development · System Architecture · Toolchain',
+    links: [
+      { icon: 'github', link: 'https://github.com/HumanLifeOS' }
+    ]
+  },
+  {
+    avatar: 'https://api.dicebear.com/7.x/shapes/svg?seed=hlos-partner1',
+    name: 'Philosophy Researcher',
+    title: 'PhD in Philosophy',
+    org: 'Eastern Philosophy Institute',
+    desc: 'Eastern Life Wisdom · Zen Culture Research',
+    links: []
+  },
+  {
+    avatar: 'https://api.dicebear.com/7.x/shapes/svg?seed=hlos-partner2',
+    name: 'AI Researcher',
+    title: 'AI Researcher',
+    org: 'AI Research Lab',
+    desc: 'Human-AI Collaborative Intelligence · Life Intelligence Models',
+    links: []
+  }
+]
+</script>
 
-### Core Principles
+# About HumanLifeOS
 
-- **Mindfulness**: Stay aware, live in the present
-- **Science**: Evidence-based, continuous exploration
-- **Openness**: Share knowledge, win-win cooperation
-- **Growth**: Continuous evolution, transcend oneself
+HumanLifeOS is dedicated to building a scientific, engineered, lifestyle-integrated, and systematic **Human Life Intelligence Operating System**, helping humans upgrade from "Instinct OS" to "Intelligence OS" and achieve life intelligence evolution.
 
-## Team Introduction
+---
 
-### Core Team
+## Core Values {#values}
 
-- **Founder**: Mindfulness practitioner, neuroscience researcher
-- **Technical Team**: Software engineers, AI experts
-- **Research Team**: Psychologists, neuroscientists
+- **Awareness**: Seeing the true operation of life
+- **Science**: Exploring life patterns with empirical methods
+- **Openness**: Sharing knowledge, win-win cooperation
+- **Evolution**: Continuous growth, transcendence of self
+
+---
+
+## Founder {#creator}
+
+<VPTeamMembers size="medium" :members="creator" />
+
+---
+
+## Team {#team}
+
+<VPTeamMembers size="small" :members="teamMembers" />
+
+---
 
 ## Contact
 
-### Get in Touch
-
 - Email: contact@humanlifeos.com
-- WeChat: HumanLifeOS
-- Weibo: @HumanLifeOS
+- GitHub: [HumanLifeOS](https://github.com/HumanLifeOS)
 
 ## Join Us
 
-### Volunteer Recruitment
-
-We welcome passionate volunteers to join our team.
-
-### Partnerships
-
-Seeking collaboration opportunities with academic institutions, enterprises, and individuals.
-
-## Privacy Policy
-
-We value user privacy, all data is strictly confidential.
+We welcome passionate volunteers to join our team in the cross-disciplinary fields of life sciences, psychology, and artificial intelligence.

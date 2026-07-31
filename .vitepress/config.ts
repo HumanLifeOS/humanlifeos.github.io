@@ -102,7 +102,7 @@ export default defineConfig({
   // HTML head 配置（添加自定义 meta 标签、链接等）
   head: [
     // PNG 格式的站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: '/ico.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/icon.png' }],
     // 浏览器主题颜色（地址栏颜色）
     ['meta', { name: 'theme-color', content: '#5f67ee' }]
   ],
@@ -161,7 +161,7 @@ export default defineConfig({
           // 自定义 vitepress 图标
           vitepress: localIconLoader(
             import.meta.url,
-            '../public/favicon.ico'
+            '../public/icon.png'
           ),
           // 使用 Iconify 的 firebase 图标
           firebase: 'logos:firebase'
