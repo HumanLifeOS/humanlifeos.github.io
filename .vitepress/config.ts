@@ -101,8 +101,8 @@ export default defineConfig({
   // prettier-ignore: 告诉 Prettier 不要格式化这段代码
   // HTML head 配置（添加自定义 meta 标签、链接等）
   head: [
-    // ICO 格式的站点图标
-    ['link', { rel: 'icon', type: 'image/vnd.microsoft.icon', href: '/favicon.ico' }],
+    // PNG 格式的站点图标
+    ['link', { rel: 'icon', type: 'image/png', href: '/ico.png' }],
     // 浏览器主题颜色（地址栏颜色）
     ['meta', { name: 'theme-color', content: '#5f67ee' }]
   ],
