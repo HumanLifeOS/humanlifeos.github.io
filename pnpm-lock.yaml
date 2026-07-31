@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@emailjs/browser':
+        specifier: ^4.4.1
+        version: 4.4.1
     devDependencies:
       husky:
         specifier: ^9.1.7
@@ -99,6 +103,10 @@ packages:
 
   '@docsearch/sidepanel-js@4.6.3':
     resolution: {integrity: sha512-grGSmvXzG0if+mrzdIKykvpIAuEQ9u0sEJ2eLRRCaQfJvsWqh2C2/aY04bIzWvDh7myi5rvl8D+tUNsVrjYQ3A==}
+
+  '@emailjs/browser@4.4.1':
+    resolution: {integrity: sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg==}
+    engines: {node: '>=14.0.0'}
 
   '@emnapi/core@1.11.1':
     resolution: {integrity: sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==}
@@ -1991,6 +1999,8 @@ snapshots:
   '@docsearch/js@4.6.3': {}
 
   '@docsearch/sidepanel-js@4.6.3': {}
+
+  '@emailjs/browser@4.4.1': {}
 
   '@emnapi/core@1.11.1':
     dependencies:

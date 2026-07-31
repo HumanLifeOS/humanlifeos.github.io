@@ -37,18 +37,14 @@ const teamMembers = [
     name: 'Alex',
     title: '人工智能工程师',
     desc: 'LLM 应用架构师 · Agent 系统开发者 · 知识图谱工程师',
-    links: [
-      { icon: 'github', link: 'https://github.com/HumanLifeOS' }
-    ]
+    links: []
   },
   {
     avatar: '/team.svg',
-    name: 'X法师',
+    name: '大道法师',
     title: '禅宗法师',
     desc: '禅宗文化研究专家 · 禅修实践导师',
-    links: [
-      { icon: 'github', link: 'https://github.com/HumanLifeOS' }
-    ]
+    links: []
   },
   {
     avatar: '/team.svg',
@@ -71,14 +67,13 @@ const teamMembers = [
 
 # 关于 HumanLifeOS
 
-> HumanLifeOS（HLOS）致力于构建一套科学化、工程化、生活化、系统化的**人类生命智能操作系统**（**生命使用手册**、**训练体系**、**知识库**），借助AI技术，帮助人类从「本能 OS」升级到「智能 OS」，实现生命智能演进。
+> HumanLifeOS（HLOS）致力于构建一套科学化、工程化、生活化、系统化的**人类生命智能操作系统**（**生命使用手册**/**训练体系**/**知识库**），借助AI技术，帮助人类从「本能 OS」升级到「智能 OS」，推动生命智能演进。
 
 
 
 ## 创始人 {#creator}
 
 <VPTeamMembers size="small" :members="creator" />
-
 
 
 ## 团队 {#team}
@@ -92,11 +87,9 @@ const teamMembers = [
 以万物一体、众生平等为科学与哲学指引，自觉觉他、自利利他。探索生命、意识、智能与宇宙终极本质。
 
 
-## 人才招募
+## 人才招募 {#careers} 
 
-- 邮箱：contact@humanlifeos.com
+- 邮箱：info@humanlifeos.com
 - GitHub：[HumanLifeOS](https://github.com/HumanLifeOS)
-
-## 加入我们
 
 欢迎有志于生命科学、心理学、人工智能交叉领域的爱好者加入我们。

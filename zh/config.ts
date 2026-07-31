@@ -167,7 +167,8 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       items: [
         { text: '创始人', link: 'creator' },
         { text: '团队', link: 'team' },
-        { text: '价值观', link: 'values' }
+        { text: '价值观', link: 'values' },
+        { text: '人才招募', link: 'careers' }
       ]
     },
 
