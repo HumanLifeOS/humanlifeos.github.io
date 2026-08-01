@@ -8,7 +8,7 @@ next: false
 # HLOS开放生态与版权协议
 
 
-## 1. 开放理念
+## 1. 开放理念 {#open-philosophy}
 
 HumanLifeOS（HLOS）致力于构建面向未来的人类生命智能基础设施。我们相信，人类生命知识、智能训练方法与技术工具的发展，需要全球范围内的开放协作与持续创新。因此，HumanLifeOS采用**渐进式开放生态模式（Progressive Open Ecosystem Model）**：
 
@@ -20,11 +20,11 @@ HumanLifeOS（HLOS）致力于构建面向未来的人类生命智能基础设�
 开放不是简单复制，而是在尊重贡献者、维护质量与保障生态持续发展的基础上，共同推动人类生命智能的发展。
 
 
-## 2. 分层开放模型
+## 2. 分层开放模型 {#layered-open-model}
 
 HumanLifeOS根据不同类型资产采用不同开放方式。
 
-## 2.1 软件与技术
+### 2.1 软件与技术 {#software-technology}
 
 包括：
 
@@ -48,7 +48,7 @@ HumanLifeOS根据不同类型资产采用不同开放方式。
 具体许可方式以对应代码仓库中的 LICENSE 文件为准。
 
 
-## 2.2 知识与内容
+### 2.2 知识与内容 {#knowledge-content}
 
 包括：
 
@@ -74,7 +74,7 @@ HumanLifeOS根据不同类型资产采用不同开放方式。
 * 衍生作品采用相同开放协议。
 
 
-## 2.3 研究与科学资料
+### 2.3 研究与科学资料 {#research-scientific}
 
 包括：
 
@@ -99,7 +99,7 @@ HumanLifeOS根据不同类型资产采用不同开放方式。
 * 尊重研究完整性。
 
 
-## 2.4 方法体系与框架
+### 2.4 方法体系与框架 {#methodologies-frameworks}
 
 包括：
 
@@ -121,7 +121,7 @@ HumanLifeOS鼓励：
 商业应用、认证培训及衍生服务，需要遵循HumanLifeOS相关授权规则。
 
 
-## 3. 商标与品牌保护
+## 3. 商标与品牌保护 {#trademark-brand}
 
 以下名称属于HumanLifeOS生态品牌资产：
 
@@ -140,7 +140,7 @@ HumanLifeOS鼓励：
 * 使用品牌进行未经许可的商业活动。
 
 
-## 4. 贡献与共建
+## 4. 贡献与共建 {#contribution-collaboration}
 
 HumanLifeOS欢迎全球开发者、研究者和实践者参与生态建设。
 
@@ -166,9 +166,8 @@ HumanLifeOS欢迎全球开发者、研究者和实践者参与生态建设。
 
 页面持续完善。
 
----
 
-## 5. 免责声明
+## 5. 免责声明 {#disclaimer}
 
 HumanLifeOS内容用于：
 
