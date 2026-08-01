@@ -26,7 +26,7 @@ export default defineAdditionalConfig({
     },
 
     footer: {
-      message: 'Released under the MIT License.',
+      message: '<a href="/open-source" style="text-decoration: none;">Open Ecosystem & Licensing</a>',
       copyright: `Copyright © ${new Date().getFullYear()} OHULAB All Rights Reserved.`
     },
 
