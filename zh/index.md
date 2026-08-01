@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 🔑 生命OS升级从“正觉”开始！
-      link: /zh/ra-training
+      link: /zh/training
 
   image:
       src: /hero.png

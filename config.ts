@@ -5,23 +5,19 @@ const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
 
 export default defineAdditionalConfig({
-  description: 'Vite & Vue powered static site generator.',
+  description: 'HumanLifeOS - The Human Life Operating System',
 
   themeConfig: {
     nav: nav(),
 
     sidebar: {
-      '/vision/': { items: sidebarMain() },
-      '/methodology/': { items: sidebarMain() },
-      '/knowledge/': { items: sidebarMain() },
-      '/training/': { items: sidebarMain() },
-      '/research/': { items: sidebarMain() },
-      '/blog/': { items: sidebarMain() },
-      '/about/': { items: sidebarMain() }
+      '/': {
+        items: sidebarEn()
+      }
     },
 
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/HumanLifeOS/humanlifeos.github.io/edit/main/:path',
       text: 'Edit this page on GitHub'
     },
 
@@ -31,131 +27,148 @@ export default defineAdditionalConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: `Copyright © ${new Date().getFullYear()} OHULAB All rights reserved`
-    }
+      copyright: `Copyright © ${new Date().getFullYear()} HumanLifeOS Lab`
+    },
+
+    docFooter: {
+      prev: 'Previous page',
+      next: 'Next page'
+    },
+
+    outline: {
+      label: 'On this page'
+    },
+
+    notFound: {
+      title: 'Page Not Found',
+      quote: "But if you don't change direction and keep looking, you may eventually arrive at where you're headed.",
+      linkLabel: 'Back to Home',
+      linkText: 'Take me home'
+    },
+
+    langMenuLabel: 'Language',
+    returnToTopLabel: 'Back to top',
+    sidebarMenuLabel: 'Menu',
+    darkModeSwitchLabel: 'Theme',
+    lightModeSwitchTitle: 'Switch to light mode',
+    darkModeSwitchTitle: 'Switch to dark mode',
+    skipToContentLabel: 'Skip to content'
   }
 })
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    {
-      text: 'Home',
-      link: '/',
-      activeMatch: '/$'
-    },
-    {
-      text: 'White Paper',
-      items: [
-        { text: 'Vision', link: '/vision/' },
-        { text: 'Methodology', link: '/methodology/' },
-        { text: 'Knowledge', link: '/knowledge/' },
-        { text: 'Training', link: '/training/' },
-        { text: 'Research', link: '/research/' }
-      ]
-    },
-    {
-      text: 'Blog',
-      link: '/blog/',
-      activeMatch: '/blog/'
-    },
-    {
-      text: 'About',
-      link: '/about/',
-      activeMatch: '/about/'
-    }
+    { text: 'Home', link: '/', activeMatch: '/$' },
+    { text: 'Origin', link: '/origin', activeMatch: '/origin' },
+    { text: 'Framework', link: '/framework', activeMatch: '/framework' },
+    { text: 'Guide', link: '/knowledge/life-user-manual', activeMatch: '/knowledge' },
+    { text: 'Training', link: '/ra-training', activeMatch: '/ra-training' },
+    { text: 'Research', link: '/research', activeMatch: '/research' },
+    { text: 'About', link: '/about', activeMatch: '/about' }
   ]
 }
 
-function sidebarGuide(): DefaultTheme.SidebarItem[] {
+function sidebarEn(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Introduction',
-      collapsed: false,
+      text: 'Origin',
+      collapsed: true,
+      base: '/origin#',
       items: [
-        { text: 'What is VitePress?', link: 'what-is-vitepress' },
-        { text: 'Getting Started', link: 'getting-started' },
-        { text: 'Routing', link: 'routing' },
-        { text: 'Deploy', link: 'deploy' }
+        { text: 'Life OS', link: 'lifeos' },
+        { text: 'Mindfulness 2.0', link: 'mindfulness-2-0' },
+        { text: 'Modern Zen', link: 'modern-zen' },
+        { text: 'Engineering Psychology', link: 'engineering-psychology' },
+        { text: 'Vision', link: 'vision' }
       ]
     },
     {
-      text: 'Writing',
-      collapsed: false,
+      text: 'Framework',
+      collapsed: true,
+      base: '/framework#',
       items: [
-        { text: 'Markdown Extensions', link: 'markdown' },
-        { text: 'Asset Handling', link: 'asset-handling' },
-        { text: 'Frontmatter', link: 'frontmatter' },
-        { text: 'Using Vue in Markdown', link: 'using-vue' },
-        { text: 'Internationalization', link: 'i18n' }
+        { text: 'Scientific Methodology', link: 'scientific-methodology' },
+        { text: 'Systematization & Engineering', link: 'systemization-engineering' },
+        { text: 'Lifestyle Training', link: 'lifestyle-training' },
+        { text: 'Research Directions', link: 'scientific-research' }
       ]
     },
     {
-      text: 'Customization',
-      collapsed: false,
+      text: 'Guide',
+      collapsed: true,
       items: [
-        { text: 'Using a Custom Theme', link: 'custom-theme' },
+        { text: 'Quick Start', link: '/knowledge/life-user-manual' },
+        { text: 'Life Structure', link: '/knowledge/frontmatter-config' },
+        { text: 'Life Mechanism', link: '/knowledge/runtime-api' },
+        { text: 'Life Healing', link: '/knowledge/cli' },
+        { text: 'Life Training', link: '/knowledge/site-config' },
         {
-          text: 'Extending the Default Theme',
-          link: 'extending-default-theme'
-        },
-        { text: 'Build-Time Data Loading', link: 'data-loading' },
-        { text: 'SSR Compatibility', link: 'ssr-compat' },
-        { text: 'Connecting to a CMS', link: 'cms' }
-      ]
-    },
-    {
-      text: 'Experimental',
-      collapsed: false,
-      items: [
-        { text: 'MPA Mode', link: 'mpa-mode' },
-        { text: 'Sitemap Generation', link: 'sitemap-generation' }
-      ]
-    },
-    { text: 'Config & API Reference', base: '/reference/', link: 'site-config' }
-  ]
-}
-
-function sidebarReference(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'Reference',
-      items: [
-        { text: 'Site Config', link: 'site-config' },
-        { text: 'Frontmatter Config', link: 'frontmatter-config' },
-        { text: 'Runtime API', link: 'runtime-api' },
-        { text: 'CLI', link: 'cli' },
-        {
-          text: 'Default Theme',
-          base: '/reference/default-theme-',
+          text: 'Dictionary',
+          collapsed: true,
+          base: '/knowledge/default-theme-',
           items: [
-            { text: 'Overview', link: 'config' },
-            { text: 'Nav', link: 'nav' },
-            { text: 'Sidebar', link: 'sidebar' },
-            { text: 'Home Page', link: 'home-page' },
-            { text: 'Footer', link: 'footer' },
-            { text: 'Layout', link: 'layout' },
-            { text: 'Badge', link: 'badge' },
-            { text: 'Team Page', link: 'team-page' },
-            { text: 'Prev / Next Links', link: 'prev-next-links' },
-            { text: 'Edit Link', link: 'edit-link' },
-            { text: 'Last Updated Timestamp', link: 'last-updated' },
-            { text: 'Search', link: 'search' },
-            { text: 'Carbon Ads', link: 'carbon-ads' }
+            { text: 'Life Entity', link: 'config' },
+            { text: 'Intelligence', link: 'nav' },
+            { text: 'Attention', link: 'sidebar' },
+            { text: 'Consciousness', link: 'home-page' },
+            { text: 'Emotion', link: 'footer' },
+            { text: 'Instinct', link: 'layout' },
+            { text: 'Perception', link: 'badge' },
+            { text: 'Personality', link: 'team-page' },
+            { text: 'Mindfulness', link: 'prev-next-links' },
+            { text: 'Right Awakening', link: 'edit-link' },
+            { text: 'Perception Anchor', link: 'last-updated' },
+            { text: 'Environmental Engineering', link: 'search' },
+            { text: 'Mind-Body Mirror', link: 'carbon-ads' }
+          ]
+        },
+        {
+          text: 'Terminology',
+          collapsed: true,
+          base: '/glossary#',
+          items: [
+            { text: 'HumanLifeOS', link: 'humanlifeos' },
+            { text: 'HLOS', link: 'hlos' },
+            { text: 'RA', link: 'right-awakening' },
+            { text: 'RAT-1', link: 'right-awakening-training' },
+            { text: 'RAT-2', link: 'right-awakening-therapy' },
+            { text: 'RAC', link: 'right-awakening-camp' }
           ]
         }
       ]
-    }
-  ]
-}
-
-function sidebarMain(): DefaultTheme.SidebarItem[] {
-  return [
-    { text: 'Vision', link: '/vision/' },
-    { text: 'Methodology', link: '/methodology/' },
-    { text: 'Knowledge', link: '/knowledge/' },
-    { text: 'Training', link: '/training/' },
-    { text: 'Research', link: '/research/' },
+    },
+    {
+      text: 'Training',
+      collapsed: true,
+      base: '/ra-training#',
+      items: [
+        { text: 'What is Right Awakening?', link: 'right-awakening' },
+        { text: 'Mindfulness Training', link: 'right-awakening-training' },
+        { text: 'Mindfulness Therapy', link: 'right-awakening-therapy' },
+        { text: 'Training Camp', link: 'right-awakening-camp' }
+      ]
+    },
+    {
+      text: 'Research',
+      collapsed: true,
+      base: '/research#',
+      items: [
+        { text: 'Goals', link: 'goals' },
+        { text: 'Projects', link: 'projects' }
+      ]
+    },
+    {
+      text: 'About',
+      collapsed: true,
+      base: '/about#',
+      items: [
+        { text: 'Creator', link: 'creator' },
+        { text: 'Team', link: 'team' },
+        { text: 'Values', link: 'values' },
+        { text: 'Careers', link: 'careers' }
+      ]
+    },
     { text: 'Blog', link: '/blog/' },
-    { text: 'About', link: '/about/' }
+    { text: 'Contact', link: '/contact' }
   ]
 }

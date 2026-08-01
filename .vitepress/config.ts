@@ -10,6 +10,7 @@ import {
   localIconLoader
 } from 'vitepress-plugin-group-icons'
 import llmstxt from 'vitepress-plugin-llms'
+import type { DefaultTheme } from 'vitepress'
 
 // 判断是否为生产环境（通过环境变量 NETLIFY 判断）
 const prod = !!process.env.NETLIFY
@@ -24,6 +25,90 @@ const ogImage = new URL('/vitepress-og.jpg', siteUrl).href
 const localeToOgLocaleMap: Record<string, string> = {
   root: 'en_US',
   zh: 'zh_CN'
+}
+
+// 英文侧边栏配置
+function sidebarEn(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Origin',
+      collapsed: true,
+      base: '/origin#',
+      items: [
+        { text: 'Life OS', link: 'lifeos' },
+        { text: 'Mindfulness 2.0', link: 'mindfulness-2-0' },
+        { text: 'Modern Zen', link: 'modern-zen' },
+        { text: 'Engineering Psychology', link: 'engineering-psychology' },
+        { text: 'Vision', link: 'vision' }
+      ]
+    },
+    {
+      text: 'Methodology',
+      collapsed: true,
+      base: '/methodology#',
+      items: [
+        { text: 'Scientific Methodology', link: 'scientific-methodology' },
+        { text: 'Systematization & Engineering', link: 'systemization-engineering' },
+        { text: 'Lifestyle Training', link: 'lifestyle-training' },
+        { text: 'Research Directions', link: 'scientific-research' }
+      ]
+    },
+    {
+      text: 'User Guide',
+      collapsed: true,
+      items: [
+        { text: 'Quick Start', link: '/knowledge/life-user-manual' },
+        { text: 'Life Structure', link: '/knowledge/frontmatter-config' },
+        { text: 'Life Mechanism', link: '/knowledge/runtime-api' },
+        { text: 'Life Healing', link: '/knowledge/cli' },
+        { text: 'Life Training', link: '/knowledge/site-config' },
+        {
+          text: 'Glossary',
+          collapsed: true,
+          base: '/glossary#',
+          items: [
+            { text: 'HumanLifeOS', link: 'humanlifeos' },
+            { text: 'HLOS', link: 'hlos' },
+            { text: 'RA', link: 'right-awakening' },
+            { text: 'RAT-1', link: 'right-awakening-training' },
+            { text: 'RAT-2', link: 'right-awakening-therapy' },
+            { text: 'RAC', link: 'right-awakening-camp' }
+          ]
+        }
+      ]
+    },
+    {
+      text: 'Training',
+      collapsed: true,
+      base: '/training#',
+      items: [
+        { text: 'What is Right Awakening?', link: 'right-awakening' },
+        { text: 'Mindfulness Training', link: 'rat-training' },
+        { text: 'Mindfulness Therapy', link: 'rat-therapy' },
+        { text: 'Training Camp', link: 'rat-camp' }
+      ]
+    },
+    {
+      text: 'Research',
+      collapsed: true,
+      items: [
+        { text: 'Overview', link: '/research/' },
+        { text: 'Goals', link: '/research/goals' },
+        { text: 'Projects', link: '/research/projects' }
+      ]
+    },
+    {
+      text: 'About',
+      collapsed: true,
+      base: '/about#',
+      items: [
+        { text: 'Creator', link: 'creator' },
+        { text: 'Team', link: 'team' },
+        { text: 'Values', link: 'values' },
+        { text: 'Careers', link: 'careers' }
+      ]
+    }
+  ]
 }
 
 export default defineConfig({
@@ -110,6 +195,8 @@ export default defineConfig({
   // 主题配置（默认主题的配置项）
   themeConfig: {
 
+    siteTitle: 'HumanLifeOS',
+
     // 社交链接（显示在导航栏）
     socialLinks: [
       { icon: 'github', link: 'https://github.com/HumanLifeOS/' }
@@ -131,7 +218,7 @@ export default defineConfig({
         }
       }
     }
-    
+
   },
 
   // 多语言配置

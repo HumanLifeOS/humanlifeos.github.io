@@ -62,9 +62,9 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
-    { text: '方法论', link: '/zh/methodology', activeMatch: '/zh/methodology' },
+    { text: '框架', link: '/zh/framework', activeMatch: '/zh/framework' },
     { text: '使用帮助', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
-    { text: '训练营', link: '/zh/ra-training', activeMatch: '/zh/ra-training' },    
+    { text: '训练营', link: '/zh/training', activeMatch: '/zh/training' },    
     { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
     { text: '关于', link: '/zh/about', activeMatch: '/zh/about' }
   ]
@@ -86,9 +86,9 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: '方法论',
+      text: '框架',
       collapsed: true,
-      base: '/zh/methodology#',
+      base: '/zh/framework#',
       items: [
         { text: '科学方法论', link: 'scientific-methodology' },
         { text: '系统化与工程化', link: 'systemization-engineering' },
@@ -143,7 +143,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
     {
       text: '训练营',
       collapsed: true,
-      base: '/zh/ra-training#',
+      base: '/zh/training#',
       items: [
         { text: '什么是正觉？', link: 'right-awakening' },
         { text: '正念训练', link: 'right-awakening-training' },

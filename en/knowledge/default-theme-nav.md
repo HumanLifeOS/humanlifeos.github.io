@@ -169,7 +169,7 @@ Refer [`socialLinks`](./default-theme-config#sociallinks).
 
 ## Custom Components
 
-You can include custom components in the navigation bar by using the `component` option. The `component` key should be the Vue component name, and must be registered globally using [Theme.enhanceApp](../guide/custom-theme#theme-interface).
+You can include custom components in the navigation bar by using the `component` option. The `component` key should be the Vue component name, and must be registered globally using `Theme.enhanceApp`.
 
 ```js [.vitepress/config.js]
 export default {
