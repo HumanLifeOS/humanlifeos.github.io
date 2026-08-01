@@ -10,11 +10,7 @@ next: false
 
 ## 1. 开放理念
 
-HumanLifeOS（HLOS）致力于构建面向未来的人类生命智能基础设施。
-
-我们相信，人类生命知识、智能训练方法与技术工具的发展，需要全球范围内的开放协作与持续创新。
-
-因此，HumanLifeOS采用**渐进式开放生态模式（Progressive Open Ecosystem Model）**：
+HumanLifeOS（HLOS）致力于构建面向未来的人类生命智能基础设施。我们相信，人类生命知识、智能训练方法与技术工具的发展，需要全球范围内的开放协作与持续创新。因此，HumanLifeOS采用**渐进式开放生态模式（Progressive Open Ecosystem Model）**：
 
 * 软件逐步开源；
 * 知识持续开放；

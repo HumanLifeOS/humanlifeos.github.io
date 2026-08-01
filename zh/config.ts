@@ -62,7 +62,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
-    { text: '框架', link: '/zh/framework', activeMatch: '/zh/framework' },
+    { text: '方法论', link: '/zh/framework', activeMatch: '/zh/framework' },
     { text: '使用帮助', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
     { text: '训练营', link: '/zh/training', activeMatch: '/zh/training' },    
     { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
@@ -86,7 +86,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: '框架',
+      text: '方法论',
       collapsed: true,
       base: '/zh/framework#',
       items: [
@@ -174,7 +174,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
 
     { text: '博客', link: '/blog/' },
 
-    { text: '版权声明', link: '/open-source' },
+    { text: '版权', link: '/open-source' },
 
     { text: '联系', link: '/contact' }
 
