@@ -63,7 +63,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
     { text: '方法论', link: '/zh/methodology', activeMatch: '/zh/methodology' },
-    { text: '知识库', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
+    { text: '使用帮助', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
     { text: '训练营', link: '/zh/ra-training', activeMatch: '/zh/ra-training' },    
     { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
     { text: '关于', link: '/zh/about', activeMatch: '/zh/about' }
@@ -97,10 +97,10 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: '知识库',
+      text: '使用帮助',
       collapsed: true,
       items: [
-        { text: '概述', link: '/knowledge/life-user-manual' },
+        { text: '快速开始', link: '/knowledge/life-user-manual' },
         { text: '生命的结构', link: '/knowledge/frontmatter-config' },
         { text: '生命的机制', link: '/knowledge/runtime-api' },
         { text: '生命的疗愈', link: '/knowledge/cli' },

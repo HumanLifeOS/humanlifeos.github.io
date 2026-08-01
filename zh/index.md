@@ -37,3 +37,12 @@ features:
     link: zh/origin#engineering-psychology
 
 ---
+
+<br><br>
+
+<p style="text-align: center;">订阅HLOS最新动态！</p>
+
+<form style="max-width: 350px; margin: 24px auto; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+  <input type="email" placeholder="您的邮箱" required style="width: 100%; box-sizing: border-box; padding: 8px 20px; border: 2px solid var(--vp-c-brand-1); border-radius: 9999px; font-size: 14px; outline: none; background-color: transparent; color: inherit;">
+  <button type="submit" style="width: 100%; box-sizing: border-box; background-color: var(--vp-c-brand-1); color: white; border: none; padding: 10px 20px; border-radius: 9999px; font-size: 14px; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor = 'var(--vp-c-brand-2)'" onmouseout="this.style.backgroundColor = 'var(--vp-c-brand-1)'">我要订阅</button>
+</form>
