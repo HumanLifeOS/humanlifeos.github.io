@@ -27,7 +27,7 @@ export default defineAdditionalConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: `Copyright © ${new Date().getFullYear()} HumanLifeOS Lab`
+      copyright: `Copyright © ${new Date().getFullYear()} OHULAB All Rights Reserved.`
     },
 
     docFooter: {
@@ -62,7 +62,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: 'Origin', link: '/origin', activeMatch: '/origin' },
     { text: 'Framework', link: '/framework', activeMatch: '/framework' },
     { text: 'Guide', link: '/knowledge/life-user-manual', activeMatch: '/knowledge' },
-    { text: 'Training', link: '/ra-training', activeMatch: '/ra-training' },
+    { text: 'Training', link: '/training', activeMatch: '/training' },
     { text: 'Research', link: '/research', activeMatch: '/research' },
     { text: 'About', link: '/about', activeMatch: '/about' }
   ]
@@ -140,7 +140,7 @@ function sidebarEn(): DefaultTheme.SidebarItem[] {
     {
       text: 'Training',
       collapsed: true,
-      base: '/ra-training#',
+      base: '/training#',
       items: [
         { text: 'What is Right Awakening?', link: 'right-awakening' },
         { text: 'Mindfulness Training', link: 'right-awakening-training' },
