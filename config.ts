@@ -169,6 +169,7 @@ function sidebarEn(): DefaultTheme.SidebarItem[] {
       ]
     },
     { text: 'Blog', link: '/blog/' },
+    { text: 'Copyright', link: '/open-source' },
     { text: 'Contact', link: '/contact' }
   ]
 }

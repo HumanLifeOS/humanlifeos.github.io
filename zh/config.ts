@@ -174,6 +174,8 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
 
     { text: '博客', link: '/blog/' },
 
+    { text: '版权声明', link: '/open-source' },
+
     { text: '联系', link: '/contact' }
 
 

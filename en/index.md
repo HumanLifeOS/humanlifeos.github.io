@@ -8,7 +8,7 @@ hero:
   tagline: From Instinct OS to Intelligent OS
   actions:
     - theme: brand
-      text: Upgrade Life OS via Right Awakening!
+      text: Upgrade Life OS via Right Awakening
       link: /training
 
   image:
