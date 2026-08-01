@@ -1,7 +1,7 @@
 ---
 description: HumanLifeOS - The Human Life Operating System
 layout: home
-title: Human Life Operating System
+title: HLOS - Human Life Operating System
 hero:
   name: HumanLifeOS
   text: The Human Life Operating System
