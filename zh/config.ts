@@ -23,7 +23,7 @@ export default defineAdditionalConfig({
     },
 
     footer: {
-      message: '<a href="/zh/open-source" style="text-decoration: none;">开放生态与版权协议</a>',
+      message: '<a href="/zh/open-source" style="text-decoration: none;">HLOS开放生态与版权协议</a>',
       copyright: `版权所有 © ${new Date().getFullYear()} 『天人合一科学实验室』`
     },
 

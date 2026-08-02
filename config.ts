@@ -26,7 +26,7 @@ export default defineAdditionalConfig({
     },
 
     footer: {
-      message: '<a href="/open-source" style="text-decoration: none;">Open Ecosystem & Licensing</a>',
+      message: '<a href="/open-source" style="text-decoration: none;">HLOS Open Ecosystem & Licensing</a>',
       copyright: `Copyright © ${new Date().getFullYear()} OHULAB All Rights Reserved.`
     },
 

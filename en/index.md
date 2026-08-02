@@ -40,7 +40,7 @@ features:
 
 <br><br>
 
-<p style="text-align: center;">Subscribe to HLOS Updates!</p>
+<p style="text-align: center;">Subscribe to HLOS Insights!</p>
 
 <form style="max-width: 350px; margin: 24px auto; display: flex; flex-direction: column; gap: 12px; align-items: center;">
   <input type="email" placeholder="Your email" required style="width: 100%; box-sizing: border-box; padding: 10px 20px; border: 2px solid var(--vp-c-brand-1); border-radius: 9999px; font-size: 15px; outline: none; background-color: transparent; color: inherit;">

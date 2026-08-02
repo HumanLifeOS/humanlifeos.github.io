@@ -40,7 +40,7 @@ features:
 
 <br><br>
 
-<p style="text-align: center;">订阅HLOS最新动态！</p>
+<p style="text-align: center;">订阅HLOS最新洞见！</p>
 
 <form style="max-width: 350px; margin: 24px auto; display: flex; flex-direction: column; gap: 12px; align-items: center;">
   <input type="email" placeholder="您的邮箱" required style="width: 100%; box-sizing: border-box; padding: 8px 20px; border: 2px solid var(--vp-c-brand-1); border-radius: 9999px; font-size: 14px; outline: none; background-color: transparent; color: inherit;">
