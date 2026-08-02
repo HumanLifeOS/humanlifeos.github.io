@@ -4,7 +4,7 @@ layout: home
 title: HLOS - Human Life Operating System
 hero:
   name: HumanLifeOS
-  text: The Human Life Operating System
+  text: Human Life Operating System
   tagline: From Instinct OS to Intelligent OS
   actions:
     - theme: brand
