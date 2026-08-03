@@ -63,7 +63,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
     { text: '方法论', link: '/zh/framework', activeMatch: '/zh/framework' },
-    { text: '使用帮助', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
+    { text: '使用指南', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
     { text: '训练营', link: '/zh/training', activeMatch: '/zh/training' },    
     { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
     { text: '关于', link: '/zh/about', activeMatch: '/zh/about' }
@@ -82,7 +82,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         { text: '正念2.0', link: 'mindfulness-2-0' },        
         { text: '禅法现代化', link: 'modern-zen' },
         { text: '工程化心理学', link: 'engineering-psychology' },
-        { text: '愿景', link: 'vision' }
+        { text: '项目愿景', link: 'vision' }
       ]
     },
     {
@@ -97,7 +97,7 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: '使用帮助',
+      text: '使用指南',
       collapsed: true,
       items: [
         { text: '快速开始', link: '/knowledge/life-user-manual' },

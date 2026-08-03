@@ -46,7 +46,3 @@ img[src='/search.png'] {
   width: 100%;
   aspect-ratio: 1 / 1;
 }
-
-.tagline-primary {
-  font-size: clamp(1.0rem, 2.9vw, 3.0rem);
-}
