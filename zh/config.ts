@@ -145,10 +145,10 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       collapsed: true,
       base: '/zh/training#',
       items: [
-        { text: '什么是正觉？', link: 'right-awakening' },
-        { text: '正念训练', link: 'right-awakening-training' },
-        { text: '正念疗法', link: 'right-awakening-therapy' },
-        { text: '正念训练营', link: 'right-awakening-camp' }
+        { text: '什么是正觉训练？', link: 'right-awakening-training' },
+        { text: '正觉训练的两个核心', link: 'right-awakening-core' },
+        { text: '正觉训练的体系架构', link: 'right-awakening-architecture' },
+        { text: '为什么需要正觉训练？', link: 'right-awakening-training-reason' }
       ]
     },
     { text: '科研', 
