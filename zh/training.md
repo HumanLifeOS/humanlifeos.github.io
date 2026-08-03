@@ -158,6 +158,6 @@ HLOS不是一个需要被相信的理念，而是一套需要被实践、验证�
 
 <br>
 
-  <a href="https://m.zsxq.com/groups/28882281515421/join.html?invite_time=2025-11-08T08%3A16%3A09.909+0800&inviter_id=118825488585882&inviter_sid=r4lobxlne1&secret=awc8rzqo19e72v89v7gya8tjdv09gtwd&share_from=ShareToWechat&keyword=dNyyM" style="text-decoration: none;"><button type="submit" style="width: 300px; box-sizing: border-box; background-color: var(--vp-c-brand-1); color: white; border: none; padding: 8px 18px; border-radius: 9999px; font-size: 13px; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor = 'var(--vp-c-brand-2)'" onmouseout="this.style.backgroundColor = 'var(--vp-c-brand-1)'"> 🔑 生命OS升级从“正觉”开始！ </button></a>
+  <a href="https://m.zsxq.com/groups/28882281515421/join.html?invite_time=2025-11-08T08%3A16%3A09.909+0800&inviter_id=118825488585882&inviter_sid=r4lobxlne1&secret=awc8rzqo19e72v89v7gya8tjdv09gtwd&share_from=ShareToWechat&keyword=dNyyM" style="text-decoration: none;"><button type="submit" style="width: 100%; max-width: 350px; box-sizing: border-box; background-color: var(--vp-c-brand-1); color: white; border: none; padding: 8px 18px; border-radius: 9999px; font-size: 13px; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor = 'var(--vp-c-brand-2)'" onmouseout="this.style.backgroundColor = 'var(--vp-c-brand-1)'"> 🔑 生命OS升级从“正觉”开始！ </button></a>
 
 <br>
