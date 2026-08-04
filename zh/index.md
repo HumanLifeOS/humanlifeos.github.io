@@ -57,9 +57,17 @@ onMounted(() => {
   const emailInput = document.getElementById('hlos-subscribe-email-zh')
   const btn = document.getElementById('hlos-subscribe-btn-zh')
   const originalText = btn.textContent
+  const originalFontSize = btn.style.fontSize
+
+  const setBtnText = (text) => {
+    btn.textContent = text
+    btn.style.fontSize = originalFontSize
+    btn.style.color = '#d33'
+  }
 
   const restoreBtn = () => {
     btn.textContent = originalText
+    btn.style.fontSize = originalFontSize
     btn.style.color = 'white'
   }
 
@@ -69,8 +77,7 @@ onMounted(() => {
     if (!email) return
 
     btn.disabled = true
-    btn.textContent = '订阅中...'
-    btn.style.color = '#d33'
+    setBtnText('订阅中...')
 
     try {
       const res = await fetch(WORKER_BASE_URL + '/subscribe', {
@@ -80,16 +87,13 @@ onMounted(() => {
       })
       const data = await res.json()
       if (data.success) {
-        btn.textContent = data.message || '订阅成功!'
-        btn.style.color = '#d33'
+        setBtnText(data.message || '订阅成功!')
         emailInput.value = ''
       } else {
-        btn.textContent = data.error || '订阅失败,请稍后重试。'
-        btn.style.color = '#d33'
+        setBtnText(data.error || '订阅失败,请稍后重试。')
       }
     } catch (err) {
-      btn.textContent = '网络错误,请稍后重试。'
-      btn.style.color = '#d33'
+      setBtnText('网络错误,请稍后重试。')
     }
     btn.disabled = false
     setTimeout(restoreBtn, 3000)

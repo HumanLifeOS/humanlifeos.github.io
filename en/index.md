@@ -57,9 +57,17 @@ onMounted(() => {
   const emailInput = document.getElementById('hlos-subscribe-email-en')
   const btn = document.getElementById('hlos-subscribe-btn-en')
   const originalText = btn.textContent
+  const originalFontSize = btn.style.fontSize
+
+  const setBtnText = (text) => {
+    btn.textContent = text
+    btn.style.fontSize = originalFontSize
+    btn.style.color = '#d33'
+  }
 
   const restoreBtn = () => {
     btn.textContent = originalText
+    btn.style.fontSize = originalFontSize
     btn.style.color = 'white'
   }
 
@@ -69,8 +77,7 @@ onMounted(() => {
     if (!email) return
 
     btn.disabled = true
-    btn.textContent = 'Submitting...'
-    btn.style.color = '#d33'
+    setBtnText('Submitting...')
 
     try {
       const res = await fetch(WORKER_BASE_URL + '/subscribe', {
@@ -80,16 +87,13 @@ onMounted(() => {
       })
       const data = await res.json()
       if (data.success) {
-        btn.textContent = data.message || 'Subscription successful!'
-        btn.style.color = '#d33'
+        setBtnText(data.message || 'Subscription successful!')
         emailInput.value = ''
       } else {
-        btn.textContent = data.error || 'Subscription failed. Please try again later.'
-        btn.style.color = '#d33'
+        setBtnText(data.error || 'Subscription failed. Please try again later.')
       }
     } catch (err) {
-      btn.textContent = 'Network error. Please try again later.'
-      btn.style.color = '#d33'
+      setBtnText('Network error. Please try again later.')
     }
     btn.disabled = false
     setTimeout(restoreBtn, 3000)
