@@ -42,7 +42,55 @@ features:
 
 <p style="text-align: center;">订阅HLOS最新洞见！</p>
 
-<form style="max-width: 350px; margin: 24px auto; display: flex; flex-direction: column; gap: 12px; align-items: center;">
-  <input type="email" placeholder="您的邮箱" required style="width: 100%; box-sizing: border-box; padding: 8px 20px; border: 2px solid var(--vp-c-brand-1); border-radius: 9999px; font-size: 14px; outline: none; background-color: transparent; color: inherit;">
-  <button type="submit" style="width: 100%; box-sizing: border-box; background-color: var(--vp-c-brand-1); color: white; border: none; padding: 10px 20px; border-radius: 9999px; font-size: 14px; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor = 'var(--vp-c-brand-2)'" onmouseout="this.style.backgroundColor = 'var(--vp-c-brand-1)'">我要订阅</button>
+<form id="hlos-subscribe-form-zh" style="max-width: 350px; margin: 24px auto; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+  <input type="email" id="hlos-subscribe-email-zh" name="email" placeholder="您的邮箱" required style="width: 100%; box-sizing: border-box; padding: 8px 20px; border: 2px solid var(--vp-c-brand-1); border-radius: 9999px; font-size: 14px; outline: none; background-color: transparent; color: inherit;">
+  <button type="submit" id="hlos-subscribe-btn-zh" style="width: 100%; box-sizing: border-box; background-color: var(--vp-c-brand-1); color: white; border: none; padding: 10px 20px; border-radius: 9999px; font-size: 14px; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor = 'var(--vp-c-brand-2)'" onmouseout="this.style.backgroundColor = 'var(--vp-c-brand-1)'">我要订阅</button>
+  <p id="hlos-subscribe-status-zh" style="margin: 4px 0 0; font-size: 13px; min-height: 18px; text-align: center;"></p>
 </form>
+
+<script>
+(function () {
+  // 部署后将下面地址替换为你的 Cloudflare Worker 实际地址
+  var WORKER_BASE_URL = 'https://hlos-subscriber.ohulab-org.workers.dev';
+  var form = document.getElementById('hlos-subscribe-form-zh');
+  if (!form) return;
+  var emailInput = document.getElementById('hlos-subscribe-email-zh');
+  var btn = document.getElementById('hlos-subscribe-btn-zh');
+  var status = document.getElementById('hlos-subscribe-status-zh');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var email = emailInput.value.trim();
+    if (!email) return;
+
+    var originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = '订阅中...';
+    status.style.color = 'var(--vp-c-text-2)';
+    status.textContent = '正在提交...';
+
+    try {
+      var res = await fetch(WORKER_BASE_URL + '/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, lang: 'zh' })
+      });
+      var data = await res.json();
+      if (data.success) {
+        status.style.color = 'var(--vp-c-brand-1)';
+        status.textContent = data.message || '订阅成功！';
+        emailInput.value = '';
+      } else {
+        status.style.color = '#d33';
+        status.textContent = data.error || '订阅失败，请稍后重试。';
+      }
+    } catch (err) {
+      status.style.color = '#d33';
+      status.textContent = '网络错误，请稍后重试。';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  });
+})();
+</script>

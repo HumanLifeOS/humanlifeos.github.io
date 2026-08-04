@@ -42,7 +42,55 @@ features:
 
 <p style="text-align: center;">Subscribe to HLOS Insights!</p>
 
-<form style="max-width: 350px; margin: 24px auto; display: flex; flex-direction: column; gap: 12px; align-items: center;">
-  <input type="email" placeholder="Your email" required style="width: 100%; box-sizing: border-box; padding: 10px 20px; border: 2px solid var(--vp-c-brand-1); border-radius: 9999px; font-size: 15px; outline: none; background-color: transparent; color: inherit;">
-  <button type="submit" style="width: 100%; box-sizing: border-box; background-color: var(--vp-c-brand-1); color: white; border: none; padding: 10px 20px; border-radius: 9999px; font-size: 15px; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor = 'var(--vp-c-brand-2)'" onmouseout="this.style.backgroundColor = 'var(--vp-c-brand-1)'">Subscribe</button>
+<form id="hlos-subscribe-form-en" style="max-width: 350px; margin: 24px auto; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+  <input type="email" id="hlos-subscribe-email-en" name="email" placeholder="Your email" required style="width: 100%; box-sizing: border-box; padding: 10px 20px; border: 2px solid var(--vp-c-brand-1); border-radius: 9999px; font-size: 15px; outline: none; background-color: transparent; color: inherit;">
+  <button type="submit" id="hlos-subscribe-btn-en" style="width: 100%; box-sizing: border-box; background-color: var(--vp-c-brand-1); color: white; border: none; padding: 10px 20px; border-radius: 9999px; font-size: 15px; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor = 'var(--vp-c-brand-2)'" onmouseout="this.style.backgroundColor = 'var(--vp-c-brand-1)'">Subscribe</button>
+  <p id="hlos-subscribe-status-en" style="margin: 4px 0 0; font-size: 13px; min-height: 18px; text-align: center;"></p>
 </form>
+
+<script>
+(function () {
+  // Replace with your actual Cloudflare Worker URL after deployment
+  var WORKER_BASE_URL = 'https://hlos-subscriber.ohulab-org.workers.dev';
+  var form = document.getElementById('hlos-subscribe-form-en');
+  if (!form) return;
+  var emailInput = document.getElementById('hlos-subscribe-email-en');
+  var btn = document.getElementById('hlos-subscribe-btn-en');
+  var status = document.getElementById('hlos-subscribe-status-en');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var email = emailInput.value.trim();
+    if (!email) return;
+
+    var originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    status.style.color = 'var(--vp-c-text-2)';
+    status.textContent = 'Submitting...';
+
+    try {
+      var res = await fetch(WORKER_BASE_URL + '/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, lang: 'en' })
+      });
+      var data = await res.json();
+      if (data.success) {
+        status.style.color = 'var(--vp-c-brand-1)';
+        status.textContent = data.message || 'Subscription successful!';
+        emailInput.value = '';
+      } else {
+        status.style.color = '#d33';
+        status.textContent = data.error || 'Subscription failed. Please try again later.';
+      }
+    } catch (err) {
+      status.style.color = '#d33';
+      status.textContent = 'Network error. Please try again later.';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  });
+})();
+</script>
