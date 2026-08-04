@@ -50,7 +50,7 @@ features:
 
 <script>
 (function () {
-  // Replace with your actual Cloudflare Worker URL after deployment
+  if (typeof document === 'undefined') return;
   var WORKER_BASE_URL = 'https://hlos-subscriber.ohulab-org.workers.dev';
   var form = document.getElementById('hlos-subscribe-form-en');
   if (!form) return;

@@ -50,7 +50,7 @@ features:
 
 <script>
 (function () {
-  // 部署后将下面地址替换为你的 Cloudflare Worker 实际地址
+  if (typeof document === 'undefined') return;
   var WORKER_BASE_URL = 'https://hlos-subscriber.ohulab-org.workers.dev';
   var form = document.getElementById('hlos-subscribe-form-zh');
   if (!form) return;
