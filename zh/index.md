@@ -48,49 +48,50 @@ features:
   <p id="hlos-subscribe-status-zh" style="margin: 4px 0 0; font-size: 13px; min-height: 18px; text-align: center;"></p>
 </form>
 
-<script>
-(function () {
-  if (typeof document === 'undefined') return;
-  var WORKER_BASE_URL = 'https://hlos-subscriber.ohulab-org.workers.dev';
-  var form = document.getElementById('hlos-subscribe-form-zh');
-  if (!form) return;
-  var emailInput = document.getElementById('hlos-subscribe-email-zh');
-  var btn = document.getElementById('hlos-subscribe-btn-zh');
-  var status = document.getElementById('hlos-subscribe-status-zh');
+<script setup>
+import { onMounted } from 'vue'
 
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    var email = emailInput.value.trim();
-    if (!email) return;
+onMounted(() => {
+  const WORKER_BASE_URL = 'https://hlos-subscriber.ohulab-org.workers.dev'
+  const form = document.getElementById('hlos-subscribe-form-zh')
+  if (!form) return
+  const emailInput = document.getElementById('hlos-subscribe-email-zh')
+  const btn = document.getElementById('hlos-subscribe-btn-zh')
+  const status = document.getElementById('hlos-subscribe-status-zh')
 
-    var originalText = btn.textContent;
-    btn.disabled = true;
-    btn.textContent = '订阅中...';
-    status.style.color = 'var(--vp-c-text-2)';
-    status.textContent = '正在提交...';
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault()
+    const email = emailInput.value.trim()
+    if (!email) return
+
+    const originalText = btn.textContent
+    btn.disabled = true
+    btn.textContent = '订阅中...'
+    status.style.color = '#d33'
+    status.textContent = '正在提交...'
 
     try {
-      var res = await fetch(WORKER_BASE_URL + '/subscribe', {
+      const res = await fetch(WORKER_BASE_URL + '/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, lang: 'zh' })
-      });
-      var data = await res.json();
+        body: JSON.stringify({ email, lang: 'zh' })
+      })
+      const data = await res.json()
       if (data.success) {
-        status.style.color = 'var(--vp-c-brand-1)';
-        status.textContent = data.message || '订阅成功！';
-        emailInput.value = '';
+        status.style.color = '#d33'
+        status.textContent = data.message || '订阅成功!'
+        emailInput.value = ''
       } else {
-        status.style.color = '#d33';
-        status.textContent = data.error || '订阅失败，请稍后重试。';
+        status.style.color = '#d33'
+        status.textContent = data.error || '订阅失败,请稍后重试。'
       }
     } catch (err) {
-      status.style.color = '#d33';
-      status.textContent = '网络错误，请稍后重试。';
+      status.style.color = '#d33'
+      status.textContent = '网络错误,请稍后重试。'
     } finally {
-      btn.disabled = false;
-      btn.textContent = originalText;
+      btn.disabled = false
+      btn.textContent = originalText
     }
-  });
-})();
+  })
+})
 </script>
