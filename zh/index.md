@@ -62,7 +62,7 @@ onMounted(() => {
   const setBtnText = (text) => {
     btn.textContent = text
     btn.style.fontSize = originalFontSize
-    btn.style.color = '#d33'
+    btn.style.color = 'white'
   }
 
   const restoreBtn = () => {
