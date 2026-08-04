@@ -51,7 +51,7 @@ features:
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  const WORKER_BASE_URL = 'https://hlos-subscriber.ohulab-org.workers.dev'
+  const WORKER_BASE_URL = 'https://subs.humanlifeos.com'
   const form = document.getElementById('hlos-subscribe-form-en')
   if (!form) return
   const emailInput = document.getElementById('hlos-subscribe-email-en')
