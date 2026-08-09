@@ -61,7 +61,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: 'Home', link: '/', activeMatch: '/$' },
     { text: 'Origin', link: '/origin', activeMatch: '/origin' },
     { text: 'Framework', link: '/framework', activeMatch: '/framework' },
-    { text: 'Guide', link: '/knowledge/life-user-manual', activeMatch: '/knowledge' },
+    { text: 'Wiki', link: '/wiki/life-user-manual', activeMatch: '/wiki' },
     { text: 'Training', link: '/training', activeMatch: '/training' },
     { text: 'Research', link: '/research', activeMatch: '/research' },
     { text: 'About', link: '/about', activeMatch: '/about' }
@@ -94,18 +94,18 @@ function sidebarEn(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: 'Guide',
+      text: 'Wiki',
       collapsed: true,
       items: [
-        { text: 'Quick Start', link: '/knowledge/life-user-manual' },
-        { text: 'Life Structure', link: '/knowledge/frontmatter-config' },
-        { text: 'Life Mechanism', link: '/knowledge/runtime-api' },
-        { text: 'Life Healing', link: '/knowledge/cli' },
-        { text: 'Life Training', link: '/knowledge/site-config' },
+        { text: 'Quick Start', link: '/wiki/life-user-manual' },
+        { text: 'Life Structure', link: '/wiki/frontmatter-config' },
+        { text: 'Life Mechanism', link: '/wiki/runtime-api' },
+        { text: 'Life Healing', link: '/wiki/cli' },
+        { text: 'Life Training', link: '/wiki/site-config' },
         {
           text: 'Dictionary',
           collapsed: true,
-          base: '/knowledge/default-theme-',
+          base: '/wiki/default-theme-',
           items: [
             { text: 'Life Entity', link: 'config' },
             { text: 'Intelligence', link: 'nav' },

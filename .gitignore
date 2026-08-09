@@ -1,6 +1,7 @@
 node_modules
 
 .vitepress/dist
+项目说明
 
 .vscode
 .idea

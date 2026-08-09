@@ -22,4 +22,4 @@ The HumanLifeOS Life User Manual is your guide to understanding and operating yo
 
 ## Next Steps
 
-Read the [Life Structure](/knowledge/frontmatter-config) section to understand how your life system is organized.
+Read the [Life Structure](/wiki/frontmatter-config) section to understand how your life system is organized.

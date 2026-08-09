@@ -63,7 +63,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
     { text: '方法论', link: '/zh/framework', activeMatch: '/zh/framework' },
-    { text: '使用指南', link: '/zh/knowledge/life-user-manual', activeMatch: '/zh/knowledge' },
+    { text: '百科', link: '/zh/wiki/life-user-manual', activeMatch: '/zh/wiki' },
     { text: '训练营', link: '/zh/training', activeMatch: '/zh/training' },    
     { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
     { text: '关于', link: '/zh/about', activeMatch: '/zh/about' }
@@ -97,18 +97,18 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: '使用指南',
+      text: '百科',
       collapsed: true,
       items: [
-        { text: '快速开始', link: '/knowledge/life-user-manual' },
-        { text: '生命的结构', link: '/knowledge/frontmatter-config' },
-        { text: '生命的机制', link: '/knowledge/runtime-api' },
-        { text: '生命的疗愈', link: '/knowledge/cli' },
-        { text: '生命的训练', link: '/knowledge/site-config' },
+        { text: '快速开始', link: '/wiki/life-user-manual' },
+        { text: '生命的结构', link: '/wiki/frontmatter-config' },
+        { text: '生命的机制', link: '/wiki/runtime-api' },
+        { text: '生命的疗愈', link: '/wiki/cli' },
+        { text: '生命的训练', link: '/wiki/site-config' },
         {
           text: '字典',
           collapsed: true,
-          base: '/zh/knowledge/default-theme-',
+          base: '/zh/wiki/default-theme-',
           items: [
             { text: '生命体', link: 'config' },
             { text: '智能', link: 'nav' },

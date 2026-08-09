@@ -54,14 +54,14 @@ function sidebarEn(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: 'User Guide',
+      text: 'Wiki',
       collapsed: true,
       items: [
-        { text: 'Quick Start', link: '/knowledge/life-user-manual' },
-        { text: 'Life Structure', link: '/knowledge/frontmatter-config' },
-        { text: 'Life Mechanism', link: '/knowledge/runtime-api' },
-        { text: 'Life Healing', link: '/knowledge/cli' },
-        { text: 'Life Training', link: '/knowledge/site-config' },
+        { text: 'Quick Start', link: '/wiki/life-user-manual' },
+        { text: 'Life Structure', link: '/wiki/frontmatter-config' },
+        { text: 'Life Mechanism', link: '/wiki/runtime-api' },
+        { text: 'Life Healing', link: '/wiki/cli' },
+        { text: 'Life Training', link: '/wiki/site-config' },
         {
           text: 'Glossary',
           collapsed: true,

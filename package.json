@@ -17,8 +17,5 @@
     "vitepress": "2.0.0-alpha.18",
     "vitepress-plugin-group-icons": "^1.7.5",
     "vitepress-plugin-llms": "^1.13.2"
-  },
-  "dependencies": {
-    "@emailjs/browser": "^4.4.1"
   }
 }
