@@ -2,9 +2,6 @@
 outline: deep
 footer: false
 ---
-
-<CoreTerms lang="en-US" />
-
 # Framework
 
 ## Preface

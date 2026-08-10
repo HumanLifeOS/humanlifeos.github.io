@@ -4,9 +4,6 @@ footer: false
 prev: false
 next: false
 ---
-
-<CoreTerms lang="en-US" />
-
 # Research
 
 Explore cutting-edge research on mindfulness and neuroscience.

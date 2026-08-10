@@ -1,9 +1,6 @@
 ---
 description: Display an edit link on doc pages to let users suggest changes on GitHub or GitLab.
 ---
-
-<CoreTerms lang="en-US" />
-
 # Edit Link
 
 ## Site-Level Config
@@ -64,4 +61,3 @@ This can be disabled per-page using the `editLink` option on frontmatter:
 editLink: false
 ---
 ```
-

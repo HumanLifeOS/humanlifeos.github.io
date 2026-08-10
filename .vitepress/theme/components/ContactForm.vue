@@ -88,16 +88,16 @@ const buttonText = computed(() => {
   }
   if (status.value.type === 'error') {
     const reason = status.value.reason;
-    if (reason === 'empty_name') return isZh.value ? '✗ 请填写姓名' : '✗ Name required';
-    if (reason === 'invalid_email') return isZh.value ? '✗ 邮箱格式错误' : '✗ Invalid email';
-    if (reason === 'empty_message') return isZh.value ? '✗ 请填写留言内容' : '✗ Message required';
-    if (reason === 'timeout') return isZh.value ? '✗ 请求超时，重试' : '✗ Timeout, Retry';
-    if (reason === 'network') return isZh.value ? '✗ 网络错误，重试' : '✗ Network error, Retry';
+    if (reason === 'empty_name') return isZh.value ? '✗ 请填写姓名！' : '✗ Name required!';
+    if (reason === 'invalid_email') return isZh.value ? '✗ 邮箱格式错误！' : '✗ Invalid email!';
+    if (reason === 'empty_message') return isZh.value ? '✗ 请填写留言内容！' : '✗ Message required!';
+    if (reason === 'timeout') return isZh.value ? '✗ 请求超时，重试！' : '✗ Timeout, Retry!';
+    if (reason === 'network') return isZh.value ? '✗ 网络错误，重试！' : '✗ Network error, Retry!';
     if (reason === 'server_detail' && status.value.detail) {
       return isZh.value ? `✗ ${status.value.detail}` : `✗ ${status.value.detail}`;
     }
-    if (reason === 'server') return isZh.value ? '✗ 服务器错误，重试' : '✗ Server error, Retry';
-    return isZh.value ? '✗ 发送失败，重试' : '✗ Failed, Retry';
+    if (reason === 'server') return isZh.value ? '✗ 服务器错误，重试！' : '✗ Server error, Retry!';
+    return isZh.value ? '✗ 发送失败，重试！' : '✗ Failed, Retry!';
   }
   return isZh.value ? '发送留言' : 'Send Message';
 });

@@ -4,9 +4,6 @@ footer: false
 prev: false
 next: false
 ---
-
-<CoreTerms lang="en-US" />
-
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 

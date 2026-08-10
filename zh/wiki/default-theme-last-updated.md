@@ -1,9 +1,6 @@
 ---
 description: 基于 Git 提交历史在 VitePress 页面上显示最后更新时间。
 ---
-
-<CoreTerms lang="zh-CN" />
-
 # 最后更新于 {#last-updated}
 
 最近一条内容的更新时间会显示在页面右下角。要启用它，请将 `lastUpdated` 选项添加到配置中。
@@ -50,4 +47,3 @@ lastUpdated: false
 ```
 
 另请参阅[默认主题：最后更新时间](./default-theme-config#lastupdated) 了解更多详细信息。主题级别的任何 [truthy](https://developer.mozilla.org/zh-CN/docs/Glossary/Truthy) 值也将启用该功能，除非在站点或页面级别明确禁用。
-

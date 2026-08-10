@@ -2,9 +2,6 @@
 outline: deep
 footer: false
 ---
-
-<CoreTerms lang="en-US" />
-
 # Life Structure
 
 Understanding the structural components of the human life system.

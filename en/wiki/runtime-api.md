@@ -2,9 +2,6 @@
 outline: deep
 footer: false
 ---
-
-<CoreTerms lang="en-US" />
-
 # Life Mechanism
 
 Understanding how the human life system operates at the mechanism level.

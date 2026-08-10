@@ -1,9 +1,6 @@
 ---
 description: VitePress 运行时 API 参考，包括组合式函数、辅助方法和内置组件。
 ---
-
-<CoreTerms lang="zh-CN" />
-
 # 运行时 API {#runtime-api}
 
 VitePress 提供了几个内置的 API 来让你访问应用程序数据。VitePress 还附带了一些可以在全局范围内使用的内置组件。
@@ -172,4 +169,3 @@ title: Hello
 - package name: {{ $params.pkg }}
 - version: {{ $params.version }}
 ```
-

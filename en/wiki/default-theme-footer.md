@@ -1,9 +1,6 @@
 ---
 description: Configure the global footer displayed at the bottom of VitePress pages.
 ---
-
-<CoreTerms lang="en-US" />
-
 # Footer
 
 VitePress will display global footer at the bottom of the page when `themeConfig.footer` is present.
@@ -57,4 +54,3 @@ This can be disabled per-page using the `footer` option on frontmatter:
 footer: false
 ---
 ```
-

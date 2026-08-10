@@ -4,9 +4,6 @@ footer: false
 prev: false
 next: false
 ---
-
-<CoreTerms lang="en-US" />
-
 # Training
 
 ## What is Right Awakening? {#right-awakening}

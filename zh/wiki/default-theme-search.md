@@ -2,9 +2,6 @@
 outline: deep
 description: 为 VitePress 站点设置本地搜索或 Algolia 搜索功能。
 ---
-
-<CoreTerms lang="zh-CN" />
-
 # 搜索 {#search}
 
 ## 本地搜索 {#local-search}
@@ -356,4 +353,3 @@ export default defineConfig({
 以下是基于此站点使用的示例配置：
 
 <<< @/snippets/algolia-crawler.js
-

@@ -2,9 +2,6 @@
 outline: deep
 footer: false
 ---
-
-<CoreTerms lang="en-US" />
-
 # Life User Manual
 
 The HumanLifeOS Life User Manual is your guide to understanding and operating your own life system.

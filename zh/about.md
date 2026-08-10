@@ -5,10 +5,6 @@ prev: false
 next: false
 ---
 
-<CoreTerms lang="zh-CN" />
-
----
-
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 

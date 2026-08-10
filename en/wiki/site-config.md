@@ -2,9 +2,6 @@
 outline: deep
 footer: false
 ---
-
-<CoreTerms lang="en-US" />
-
 # Life Training
 
 Systematic training programs for upgrading the human life operating system.

@@ -1,9 +1,6 @@
 ---
 description: 配置 VitePress 默认主题的导航栏，包括站点标题、图标和菜单链接。
 ---
-
-<CoreTerms lang="zh-CN" />
-
 # 导航栏 {#nav}
 
 Nav 是显示在页面顶部的导航栏。它包含站点标题、全局菜单链接等。
@@ -219,4 +216,3 @@ export default {
 - `screenMenu`：一个可选的布尔值，指示组件是否在移动导航菜单内
 
 你可以在端到端测试中查看示例 [这里](https://github.com/vuejs/vitepress/tree/main/__tests__/e2e/.vitepress)。
-

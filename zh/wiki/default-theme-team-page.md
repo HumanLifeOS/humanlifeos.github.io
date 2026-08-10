@@ -1,9 +1,6 @@
 ---
 description: 使用 VitePress 内置的团队组件创建包含成员资料的团队页面。
 ---
-
-<CoreTerms lang="zh-CN" />
-
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 
@@ -259,4 +256,3 @@ interface TeamMember {
   </VPTeamPageSection>
 </VPTeamPage>
 ```
-

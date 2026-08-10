@@ -1,9 +1,6 @@
 ---
 description: 使用 Badge 组件为 VitePress 文档的标题添加状态标签。
 ---
-
-<CoreTerms lang="zh-CN" />
-
 # 徽标 {#badge}
 
 徽标可让你为标题添加状态。例如，指定部分的类型或支持的版本可能很有用。
@@ -73,4 +70,3 @@ interface Props {
   type?: 'info' | 'tip' | 'warning' | 'danger'
 }
 ```
-
