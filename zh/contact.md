@@ -14,10 +14,6 @@ editLink: false
 
 <ContactForm language="zh-CN" />
 
-<script setup>
-// ContactForm 组件已在 theme/index.ts 中全局注册
-</script>
-
 ## 联系方式
 
 - <b>联系电话</b>： +86 177-2251-0596（中国大陆）， +852 5941-9145（中国香港）

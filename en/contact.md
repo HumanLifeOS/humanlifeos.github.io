@@ -14,10 +14,6 @@ If you have any suggestions or cooperation proposals for the HumanLifeOS project
 
 <ContactForm language="en" />
 
-<script setup>
-// ContactForm component is globally registered in theme/index.ts
-</script>
-
 ## Contact Information
 
 - <b>Phone</b>: +86 177-2251-0596 (Mainland China), +852 5941-9145 (Hong Kong)
