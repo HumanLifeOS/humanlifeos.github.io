@@ -5,6 +5,8 @@ prev: false
 next: false
 ---
 
+<CoreTerms lang="en-US" />
+
 # HLOS Open Ecosystem & Licensing
 
 ## 1. Open Philosophy
@@ -183,3 +185,4 @@ They do not constitute:
 * Replacement for professional healthcare services.
 
 Users should apply the information responsibly according to their own circumstances.
+

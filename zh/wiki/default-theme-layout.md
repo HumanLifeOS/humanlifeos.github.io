@@ -2,6 +2,8 @@
 description: 在 VitePress 默认主题中选择 doc、page 和 home 布局。
 ---
 
+<CoreTerms lang="zh-CN" />
+
 # 布局 {#layout}
 
 可以通过设置页面 [frontmatter](./frontmatter-config) 选项来选择页面布局。有 3 种布局选项 `doc`、`page` 和 `home`。如果未指定任何内容，则该页面将被视为 `doc` 页面。
@@ -64,3 +66,4 @@ export default {
   }
 }
 ```
+

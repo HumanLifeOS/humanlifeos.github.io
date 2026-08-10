@@ -3,6 +3,8 @@ outline: deep
 footer: false
 ---
 
+<CoreTerms lang="en-US" />
+
 # Life Healing
 
 Approaches to healing and restoring balance in the life system.

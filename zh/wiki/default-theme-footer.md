@@ -2,6 +2,8 @@
 description: 配置 VitePress 页面底部显示的全局页脚。
 ---
 
+<CoreTerms lang="zh-CN" />
+
 # 页脚 {#footer}
 
 配置好 `themeConfig.footer`，VitePress 将在全局页面底部显示页脚。
@@ -55,3 +57,4 @@ export default {
 footer: false
 ---
 ```
+

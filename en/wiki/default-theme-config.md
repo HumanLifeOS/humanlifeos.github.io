@@ -2,6 +2,8 @@
 description: Reference of all configuration options available for the VitePress default theme.
 ---
 
+<CoreTerms lang="en-US" />
+
 # Default Theme Config
 
 Theme config lets you customize your theme. You can define theme config via the `themeConfig` option in the config file:
@@ -518,3 +520,4 @@ const { hasSidebar } = useLayout()
   <div v-if="hasSidebar">Only show when sidebar exists</div>
 </template>
 ```
+

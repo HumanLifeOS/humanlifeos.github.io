@@ -2,6 +2,8 @@
 description: Create team pages with member profiles using VitePress built-in team components.
 ---
 
+<CoreTerms lang="en-US" />
+
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 
@@ -258,3 +260,4 @@ Creates a "section" with in team page. It accepts `#title`, `#lead`, and `#membe
   </VPTeamPageSection>
 </VPTeamPage>
 ```
+

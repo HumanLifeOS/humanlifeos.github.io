@@ -5,6 +5,8 @@ prev: false
 next: false
 ---
 
+<CoreTerms lang="zh-CN" />
+
 # HLOS开放生态与版权协议
 
 
@@ -182,3 +184,4 @@ HumanLifeOS内容用于：
 * 任何形式的替代性医疗服务。
 
 用户应根据自身情况合理使用相关内容。
+

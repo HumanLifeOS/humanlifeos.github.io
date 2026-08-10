@@ -2,6 +2,8 @@
 description: Configure the VitePress default theme home page layout with hero sections, features, and custom content.
 ---
 
+<CoreTerms lang="en-US" />
+
 # Home Page
 
 VitePress default theme provides a homepage layout, which you can also see used on [the homepage of this site](../). You may use it on any of your pages by specifying `layout: home` in the [frontmatter](./frontmatter-config).
@@ -197,3 +199,4 @@ npx vitepress init
 ::: info
 VitePress didn't always auto-style the extra content of the `layout: home` page. To revert to older behavior, you can add `markdownStyles: false` to the frontmatter.
 :::
+

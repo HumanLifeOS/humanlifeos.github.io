@@ -2,6 +2,8 @@
 description: VitePress 默认主题所有可用配置选项的参考。
 ---
 
+<CoreTerms lang="zh-CN" />
+
 # 默认主题配置 {#default-theme-config}
 
 主题配置可以让你能够自定义主题。可以通过将 `themeConfig` 添加到配置文件来进行主题配置：
@@ -444,3 +446,4 @@ export interface DocFooter {
 - 默认值：`false`
 
 是否在 markdown 中的外部链接旁显示外部链接图标。
+

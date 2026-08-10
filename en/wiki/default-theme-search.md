@@ -3,6 +3,8 @@ outline: deep
 description: Set up local or Algolia-powered search for your VitePress site.
 ---
 
+<CoreTerms lang="en-US" />
+
 # Search
 
 ## Local Search
@@ -358,3 +360,4 @@ export default defineConfig({
 Here is an example config based on what this site uses:
 
 <<< @/snippets/algolia-crawler.js
+

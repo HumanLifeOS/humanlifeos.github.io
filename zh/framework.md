@@ -5,6 +5,8 @@ prev: false
 next: false
 ---
 
+<CoreTerms lang="zh-CN" />
+
 # 方法论
 
 ## 前言
@@ -266,3 +268,4 @@ HumanLifeOS训练：
 最终探索：
 
 > 人类生命智能的无限可能。
+

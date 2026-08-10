@@ -5,6 +5,8 @@ prev: false
 next: false
 ---
 
+<CoreTerms lang="en-US" />
+
 # Origin
 
 ## Life OS {#lifeos}

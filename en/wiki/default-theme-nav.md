@@ -2,6 +2,8 @@
 description: Configure the navigation bar in the VitePress default theme including site title, logo, and menu links.
 ---
 
+<CoreTerms lang="en-US" />
+
 # Nav
 
 The Nav is the navigation bar displayed on top of the page. It contains the site title, global menu links, etc.
@@ -218,3 +220,4 @@ Your component will be rendered in the navigation bar. VitePress will provide th
 - `screenMenu`: an optional boolean indicating whether the component is inside mobile navigation menu
 
 You can check an example in the e2e tests [here](https://github.com/vuejs/vitepress/tree/main/__tests__/e2e/.vitepress).
+
