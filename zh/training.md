@@ -4,6 +4,7 @@ footer: false
 prev: false
 next: false
 ---
+
 # HLOS训练营
 > —— HLOS训练营是一个基于正觉（Right Awakening）的线上社区与线下俱乐部的训练体系，正觉是对生命运行机制的直接认识与重新训练。
 
