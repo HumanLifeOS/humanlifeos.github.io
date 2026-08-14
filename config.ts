@@ -61,7 +61,6 @@ function nav(): DefaultTheme.NavItem[] {
     { text: 'Home', link: '/', activeMatch: '/$' },
     { text: 'Origin', link: '/origin', activeMatch: '/origin' },
     { text: 'Framework', link: '/framework', activeMatch: '/framework' },
-    { text: 'Wiki', link: '/wiki/life-user-manual', activeMatch: '/wiki' },
     { text: 'Training', link: '/training', activeMatch: '/training' },
     { text: 'Research', link: '/research', activeMatch: '/research' },
     { text: 'About', link: '/about', activeMatch: '/about' }

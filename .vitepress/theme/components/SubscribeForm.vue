@@ -162,7 +162,7 @@ async function handleUnsubscribe() {
 }
 
 .subscribe-form {
-  max-width: 350px;
+  max-width: 400px;
   margin: 24px auto;
   display: flex;
   flex-direction: column;
