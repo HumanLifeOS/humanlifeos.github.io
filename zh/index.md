@@ -31,7 +31,7 @@ features:
     link: /zh/origin#mindfulness-2-0
 
   - icon:
-      src: /zh/icons/icon-modern-zen.svg
+      src: /icons/icon-modern-zen.svg
       alt: 禅法现代化
     title: 禅法现代化
     details: 将禅修内观的古老智慧科学化、生活化、工程化、系统化重构，适配现代人需求。
