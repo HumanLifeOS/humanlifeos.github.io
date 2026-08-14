@@ -1,5 +1,6 @@
 <template>
   <div class="subscribe-section">
+    <a id="subscribe-section"></a>
     <p class="subscribe-title">{{ isZh ? '订阅HLOS最新洞见！' : 'Subscribe to HLOS Insights!' }}</p>
 
     <!-- 订阅模式 -->
@@ -25,7 +26,7 @@
     </form>
 
     <!-- 模式切换链接 -->
-    <a href="#" class="mode-toggle" @click.prevent="toggleMode">
+    <a href="#subscribe-section" class="mode-toggle" @click.prevent="toggleMode">
       {{ mode === 'subscribe'
         ? (isZh ? '已有账号？点此取消订阅' : 'Already subscribed? Unsubscribe here')
         : (isZh ? '← 返回订阅' : '← Back to subscribe') }}
@@ -57,6 +58,11 @@ function toggleMode() {
   mode.value = mode.value === 'subscribe' ? 'unsubscribe' : 'subscribe';
   email.value = '';
   status.value = { type: '', message: '' };
+  // 滚动到锚点位置
+  const anchor = document.getElementById('subscribe-section');
+  if (anchor) {
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 const subscribeButtonText = computed(() => {
