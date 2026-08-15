@@ -63,7 +63,6 @@ function nav(): DefaultTheme.NavItem[] {
     { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
     { text: '方法论', link: '/zh/framework', activeMatch: '/zh/framework' },
-    { text: '百科', link: '/zh/wiki/life-user-manual', activeMatch: '/zh/wiki' },
     { text: '训练营', link: '/zh/training', activeMatch: '/zh/training' },    
     { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
     { text: '关于', link: '/zh/about', activeMatch: '/zh/about' }
