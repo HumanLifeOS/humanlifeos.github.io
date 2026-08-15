@@ -46,3 +46,41 @@ img[src='/search.png'] {
   width: 100%;
   aspect-ratio: 1 / 1;
 }
+
+/* 手机/平板端：展开的导航菜单（VPNavScreen）宽度与顶部标题内容行对齐
+   结构对应关系：
+     顶栏标题行内容实际边界： .VPNavBar > .wrapper  （padL:24 / padR:8，container 宽度自适应）
+     展开菜单内容实际边界：  .VPNavScreen > ?
+   VitePress 默认把 VPNavScreen 设成左右 pad 32 + 内部 container 硬塞 max-width:288，
+     导致菜单变窄与标题行不对齐。
+   修复原则：
+     让 .VPNavScreen 直接"扮演"VPNavBar.wrapper 这个角色 —— 应用完全相同的左右 padding；
+     让 .VPNavScreen > .container 应用与 .VPNavBar > .wrapper > .container 完全相同的规则。
+   这样无论手机（375px）/平板（752px）断点，菜单项的左右边界都会与顶栏 HumanLifeOS 所在
+   的内容行严格对齐。                                                        */
+.VPNavScreen {
+  /* 与 .VPNavBar > .wrapper 左右 padding 完全一致（VitePress 默认值）*/
+  padding-left: 24px !important;
+  padding-right: 8px !important;
+  box-sizing: border-box;
+}
+
+.VPNavScreen > .container {
+  /* 与 .VPNavBar > .wrapper > .container 完全一致 */
+  max-width: 1376px !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box;
+  width: auto;
+}
+
+/* 手机/平板端：展开菜单底部的 GitHub 等社交媒体图标居左
+   当前 VitePress 默认在 .VPNavScreen 下的社交图标容器
+   (.VPSocialLinks.VPNavScreenSocialLinks) 使用 justify-content:center，
+   使图标在容器内水平居中，视觉上与 Home/Origin 等菜单项不对齐。
+   改为 justify-content:flex-start，让图标从菜单项的左边界同一起点开始排列。
+   作用范围：仅 VPNavScreen 里的社交图标，不影响顶栏 VPNavBar 的社交链接。 */
+.VPNavScreen .VPSocialLinks.VPNavScreenSocialLinks {
+  justify-content: flex-start !important;
+}

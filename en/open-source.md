@@ -4,6 +4,8 @@ footer: false
 prev: false
 next: false
 ---
+
+
 # HLOS Open Ecosystem & Licensing
 
 ## 1. Open Philosophy
