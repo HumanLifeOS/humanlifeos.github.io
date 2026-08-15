@@ -60,11 +60,11 @@ export default defineAdditionalConfig({
 // 页头导航栏配置
 function nav(): DefaultTheme.NavItem[] {
   return [
-    { text: '首页', link: '/zh/', activeMatch: '/zh/$' },
     { text: '缘起', link: '/zh/origin', activeMatch: '/zh/origin' },
     { text: '方法论', link: '/zh/framework', activeMatch: '/zh/framework' },
     { text: '训练营', link: '/zh/training', activeMatch: '/zh/training' },    
     { text: '科研', link: '/zh/research', activeMatch: '/zh/research' },
+    { text: '博客', link: '/zh/blog', activeMatch: '/zh/blog' },
     { text: '关于', link: '/zh/about', activeMatch: '/zh/about' }
   ]
 }
@@ -93,50 +93,6 @@ function sidebarMain(): DefaultTheme.SidebarItem[] {
         { text: '系统化与工程化', link: 'systemization-engineering' },
         { text: '生活化训练', link: 'lifestyle-training' },
         { text: '科研方向', link: 'scientific-research' }
-      ]
-    },
-    {
-      text: '百科',
-      collapsed: true,
-      items: [
-        { text: '快速开始', link: '/wiki/life-user-manual' },
-        { text: '生命的结构', link: '/wiki/frontmatter-config' },
-        { text: '生命的机制', link: '/wiki/runtime-api' },
-        { text: '生命的疗愈', link: '/wiki/cli' },
-        { text: '生命的训练', link: '/wiki/site-config' },
-        {
-          text: '字典',
-          collapsed: true,
-          base: '/zh/wiki/default-theme-',
-          items: [
-            { text: '生命体', link: 'config' },
-            { text: '智能', link: 'nav' },
-            { text: '注意力', link: 'sidebar' },
-            { text: '意识', link: 'home-page' },
-            { text: '情感', link: 'footer' },
-            { text: '本能', link: 'layout' },
-            { text: '感知', link: 'badge' },
-            { text: '性格', link: 'team-page' },
-            { text: '正念', link: 'prev-next-links' },
-            { text: '正觉', link: 'edit-link' },
-            { text: '感知锚点', link: 'last-updated' },
-            { text: '环境工程', link: 'search' },
-            { text: '心身镜像', link: 'carbon-ads' }
-          ]
-        },
-        {
-          text: '术语',
-          collapsed: true,
-          base: '/zh/glossary#',
-          items: [
-            { text: 'HumanLifeOS', link: 'humanlifeos' },
-            { text: 'HLOS', link: 'hlos' },
-            { text: 'RA', link: 'right-awakening' },
-            { text: 'RAT-1', link: 'right-awakening-training' },
-            { text: 'RAT-2', link: 'right-awakening-therapy' },
-            { text: 'RAC', link: 'right-awakening-camp' }
-          ]
-        }        
       ]
     },
     {

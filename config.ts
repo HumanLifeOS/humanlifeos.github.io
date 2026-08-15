@@ -58,11 +58,11 @@ export default defineAdditionalConfig({
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    { text: 'Home', link: '/', activeMatch: '/$' },
     { text: 'Origin', link: '/origin', activeMatch: '/origin' },
     { text: 'Framework', link: '/framework', activeMatch: '/framework' },
     { text: 'Training', link: '/training', activeMatch: '/training' },
     { text: 'Research', link: '/research', activeMatch: '/research' },
+    { text: 'Blog', link: '/blog', activeMatch: '/blog' },
     { text: 'About', link: '/about', activeMatch: '/about' }
   ]
 }
@@ -90,50 +90,6 @@ function sidebarEn(): DefaultTheme.SidebarItem[] {
         { text: 'Systematization & Engineering', link: 'systemization-engineering' },
         { text: 'Lifestyle Training', link: 'lifestyle-training' },
         { text: 'Research Directions', link: 'scientific-research' }
-      ]
-    },
-    {
-      text: 'Wiki',
-      collapsed: true,
-      items: [
-        { text: 'Quick Start', link: '/wiki/life-user-manual' },
-        { text: 'Life Structure', link: '/wiki/frontmatter-config' },
-        { text: 'Life Mechanism', link: '/wiki/runtime-api' },
-        { text: 'Life Healing', link: '/wiki/cli' },
-        { text: 'Life Training', link: '/wiki/site-config' },
-        {
-          text: 'Dictionary',
-          collapsed: true,
-          base: '/wiki/default-theme-',
-          items: [
-            { text: 'Life Entity', link: 'config' },
-            { text: 'Intelligence', link: 'nav' },
-            { text: 'Attention', link: 'sidebar' },
-            { text: 'Consciousness', link: 'home-page' },
-            { text: 'Emotion', link: 'footer' },
-            { text: 'Instinct', link: 'layout' },
-            { text: 'Perception', link: 'badge' },
-            { text: 'Personality', link: 'team-page' },
-            { text: 'Mindfulness', link: 'prev-next-links' },
-            { text: 'Right Awakening', link: 'edit-link' },
-            { text: 'Perception Anchor', link: 'last-updated' },
-            { text: 'Environmental Engineering', link: 'search' },
-            { text: 'Mind-Body Mirror', link: 'carbon-ads' }
-          ]
-        },
-        {
-          text: 'Terminology',
-          collapsed: true,
-          base: '/glossary#',
-          items: [
-            { text: 'HumanLifeOS', link: 'humanlifeos' },
-            { text: 'HLOS', link: 'hlos' },
-            { text: 'RA', link: 'right-awakening' },
-            { text: 'RAT-1', link: 'right-awakening-training' },
-            { text: 'RAT-2', link: 'right-awakening-therapy' },
-            { text: 'RAC', link: 'right-awakening-camp' }
-          ]
-        }
       ]
     },
     {

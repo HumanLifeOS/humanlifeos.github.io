@@ -13,7 +13,7 @@ const creator = [
     avatar: '/oceanx.jpg',
     name: '明海',
     title: 'HLOS创始人',
-    desc: 'HI与AI智能探索独立学者研究员',
+    desc: 'HI与AI协同演进独立学者研究员',
     links: [
       { icon: 'github', link: 'https://github.com/HumanLifeOS' },
       { icon: 'x', link: 'https://x.com/HumanLifeOS' }

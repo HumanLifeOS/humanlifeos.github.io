@@ -21,7 +21,7 @@ const { lang: siteLang } = useData()
 
 const zhTerms: TermZh[] = [
   { abbr: 'OS', enFull: 'Operating System', zhName: '操作系统' },  
-  { abbr: 'HumanLifeOS', enFull: 'Human Life (Intelligence Agent) OS', zhName: '人类生命智能体操作系统' },
+  { abbr: 'HumanLifeOS', enFull: 'Human Life (Intelligence Agent) Operating System', zhName: '人类生命智能体操作系统' },
   { abbr: 'HLOS', enFull: 'Human Life Operating System', zhName: '人类生命智能体操作系统' },
   { abbr: 'RA', enFull: 'Right Awakening', zhName: '正觉' },
   { abbr: 'RAT ➊', enFull: 'Right Awakening Training', zhName: '正觉训练' },
@@ -31,7 +31,7 @@ const zhTerms: TermZh[] = [
 
 const enTerms: TermEn[] = [
   { abbr: 'OS', full: 'Operating System' },
-  { abbr: 'HumanLifeOS', full: 'Human Life (Intelligence Agent) OS' },
+  { abbr: 'HumanLifeOS', full: 'Human Life (Intelligence Agent) Operating System' },
   { abbr: 'HLOS', full: 'Human Life Operating System' },
   { abbr: 'RA', full: 'Right Awakening' },
   { abbr: 'RAT ➊', full: 'Right Awakening Training' },
